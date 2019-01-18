@@ -15,13 +15,14 @@ li {
 a {
   text-decoration: none;
 }
-.nav-animate{
-  animation: fadeIn 3s ;
+.nav-animate {
+  animation: fadeIn 3s;
 }
-@keyframes fadeIn{
-  from{
+@keyframes fadeIn {
+  from {
     opacity: 0;
-  }to{
+  }
+  to {
     opacity: 1;
   }
 }
@@ -36,6 +37,10 @@ a {
   opacity: 0.6;
 }
 
-a.nav-link:hover {
+li.nav-item:hover {
+  font-weight: 600 !important;
+}
+
+.dropdown-toggle:hover {
   font-weight: 600 !important;
 }

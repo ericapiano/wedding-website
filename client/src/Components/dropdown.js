@@ -6,6 +6,7 @@ import {
   DropdownItem
 } from "reactstrap";
 import { Link } from "react-router-dom";
+import "./dropdown.css";
 
 const styles = {
   navcolor: {

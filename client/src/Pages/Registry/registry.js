@@ -43,7 +43,7 @@ class Registry extends Component {
                   <img
                     className="article-img"
                     src="https://www.logolynx.com/images/logolynx/eb/eb69ec763edf8991d8c87d9742aaf57f.jpeg"
-                    alt=" "
+                    alt="crate and barrel"
                   />
                   <div id="browse_app">
                     <a
@@ -65,6 +65,7 @@ class Registry extends Component {
                     <a
                       className="btn btn-large btn-info shopbtn"
                       href="https://www.bedbathandbeyond.com/"
+                      alt="Bed Bath Beyond"
                     >
                       SHOP
                     </a>
@@ -80,6 +81,7 @@ class Registry extends Component {
                     <a
                       className="btn btn-large btn-info shopbtn"
                       href="https://www.amazon.com/"
+                      alt="amazon"
                     >
                       SHOP
                     </a>
