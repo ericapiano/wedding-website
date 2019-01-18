@@ -1,0 +1,17 @@
+.btn-secondary {
+  background-color: transparent !important;
+}
+
+.nav-item:hover {
+  font-weight: 600;
+  background-color: white;
+}
+
+/* dropdown-item {
+  font-weight: 600;
+  background-color: white;
+}
+
+.dropdown-menu {
+  font-weight: 600;
+} */

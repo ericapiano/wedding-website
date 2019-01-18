@@ -1,0 +1,63 @@
+figure {
+  border-radius: 50%;
+}
+
+.no-gutter {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.p1 {
+  padding: 1em;
+}
+
+.aboutcouple {
+  border-radius: 50%;
+}
+
+.bioPic {
+  border-radius: 50%;
+
+  min-height: 200px;
+  min-width: 200px;
+  height: 20vw;
+  width: 20vw;
+  position: relative;
+}
+
+.bioPicContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bioPic {
+}
+
+.bioPic.left {
+  animation-name: moveright;
+  animation-duration: 2s;
+}
+.bioPic.right {
+  animation-name: moveleft;
+  animation-duration: 2s;
+}
+
+@keyframes moveright {
+  from {
+    right: 50vw;
+  }
+  to {
+    right: 0vw;
+  }
+}
+
+@keyframes moveleft {
+  from {
+    left: 50vw;
+  }
+  to {
+    left: 0vw;
+  }
+}

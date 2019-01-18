@@ -1,0 +1,139 @@
+body {
+  background-image: url(../images/rings.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.display-4 {
+  font-family: "Great Vibes", cursive;
+}
+.jumbotron {
+  opacity: 0.6;
+}
+.display-5 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 700px) {
+  .leading {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Grid styles -------------------------------------------------*/
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+/* Generic styles ----------------------------------------------*/
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+header {
+  padding: 10px;
+  font-size: 2em;
+  color: white;
+  background-color: #333;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.leading {
+  height: 240px;
+  margin-bottom: 30px;
+  padding: 30px;
+  color: white;
+  background: url("https://cdn.glitch.com/a5121e34-96b3-4a70-8227-040c51e64fae%2Fcat.jpg?1509635989509")
+    center #333 no-repeat;
+  background-size: cover;
+  color: white;
+  text-shadow: 0px 0px 5px #000;
+}
+
+.leading-bigtext {
+  margin-right: 60px;
+  font-weight: bold;
+  font-size: 24vw;
+}
+
+@media (min-width: 700px) {
+  .leading-bigtext {
+    font-size: 140px;
+  }
+}
+
+.leading-text {
+  max-width: 900px;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+.cards {
+  max-width: 960px;
+  margin: 0 auto 30px;
+}
+
+article {
+  position: relative;
+}
+
+.article-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.article-img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 3px 6px black, 0 3px 6px black;
+  cursor: pointer;
+}
+
+.article-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.col-12 {
+  margin-top: 60px;
+}
+
+.shopbtn {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(73, 71, 71);
+  color: white;
+  /* border: 2px solid black;
+  outline: 2px solid black; */
+}
+
+.shopbtn:hover {
+  color: white;
+  background: rgb(139, 137, 137);
+  font-weight: 800;
+}
+
+.btn-info {
+  border-color: rgb(105, 104, 104);
+}
+.btn-info:hover {
+  border-color: rgb(105, 104, 104);
+}

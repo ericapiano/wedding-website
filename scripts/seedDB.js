@@ -63,8 +63,30 @@ const registryListSeed = [
     locationName: "Not yet done"
   },
 ]
+const loginSeed = [
+  {
+    userName: "jack",
+    password: "abcd"
+  },
+  {
+    userName: "jill",
+    password: "wxyz"
+  },
+  {
+    userName: "test",
+    password: "testing"
+  }
+]
 
-
+  db.LOGIN
+  .remove({})
+  .then(() => db.LOGIN.collection.insertMany(loginSeed))
+  .then(data => {
+    console.log(data.length + " LOGIN records inserted!");
+  })
+  .catch(err => {
+    console.error(err);
+  });
   
   db.EVENT
   .remove({})

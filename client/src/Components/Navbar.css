@@ -1,0 +1,41 @@
+ul {
+  list-style-type: none;
+  margin: auto;
+}
+
+#navbarNav {
+  text-align: center;
+}
+
+li {
+  display: inline;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+.nav-animate{
+  animation: fadeIn 3s ;
+}
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }to{
+    opacity: 1;
+  }
+}
+
+.navbar-nav {
+  border-bottom: 3px solid black;
+  border-top: 1px solid black;
+}
+
+.navbar {
+  background-color: #e9ecef;
+  opacity: 0.6;
+}
+
+a.nav-link:hover {
+  font-weight: 600 !important;
+}

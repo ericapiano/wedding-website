@@ -1,27 +1,34 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-// import components from react router dom
-// import {browser}
-import Text from "./components/Text";
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Registry from "./Pages/Registry";
+import Navbar from "./Components/Navbar";
+import AboutParty from "./Pages/AboutParty";
+import AboutCouple from "./Pages/AboutCouple";
+import Homepage from "./Pages/Home";
+import RSVP from "./Pages/RSVP";
+// import Directions from "./Pages/Directions";
+import Events from "./Pages/Events";
+import Login from "./Pages/Login";
+import GuestList from "./Pages/GuestList"
 
-
-function App() {
+const App = () => {
   return (
     <Router>
       <div>
-        <Text 
-        
-        />
-        
-        <Switch>
-          { <Route exact path="/" />
-          /*<Route exact path="/events" component={Events} /> */}
-          {/* <Route exact path="/records/:id" component={Detail} /> */}
-          {/* <Route component={NoMatch} /> */}
-        </Switch>
+        <Navbar />
+        <Route exact path="/" component={Homepage} />
+        <Route exact path="/about-couple" component={AboutCouple} />
+        <Route exact path="/about-party" component={AboutParty} />
+        <Route exact path="/home" component={Homepage} />
+        <Route exact path="/rsvp" component={RSVP} />
+        <Route exact path="/registry" component={Registry} />
+        <Route exact path="/events" component={Events} />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/submit" component={GuestList} />
       </div>
     </Router>
   );
-}
+};
 
 export default App;
+// note

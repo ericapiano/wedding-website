@@ -1,14 +1,22 @@
-import axios from "axios";
+import axios from 'axios';
 
 export default {
-  // Gets all books
-  geteventlists: function(list) {
-    return axios.get("/api/events", list);
+  getAllEvents: function() {
+    console.log("getting events with axios");
+    return axios.get('/api/events/')
   },
-  getrsvplists: function(list){
-    return axios.get("/api/rsvp", list);
+  getAllRsvp: function() {
+    console.log("getting rsvp with axios");
+    return axios.get('/api/rsvp/')
   },
-  getregistrylists: function(list){
-    return axios.get("/api/registry", list);
+  updateRsvp: function(){
+    console.log("updating rsvp");
+    return axios.update('/api/rsvp/:id')
   },
-};
+  postCredentials: function(){
+    console.log("posting credentials");
+    return axios.post('/api/login/:userName')
+  }
+  
+
+}

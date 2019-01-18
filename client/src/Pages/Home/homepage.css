@@ -1,0 +1,40 @@
+body {
+  background-image: url(../images/rings.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.display-4 {
+  font-family: "Great Vibes", cursive;
+}
+.jumbotron {
+  opacity: 0.6;
+  display: inherit !important;
+  position: relative;
+  z-index: -1;
+}
+.display-5 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.jumbotron {
+  padding-top: 30px;
+}
+
+.Countdown {
+  font-size: 25px;
+}
+
+.number {
+  margin-right: 4px;
+}
+
+.letter {
+  margin-right: 4px;
+}
+.date {
+  font-size: 35px;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 800;
+}
