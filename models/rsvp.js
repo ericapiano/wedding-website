@@ -5,7 +5,6 @@ var mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 var rsvpSchema = new Schema({
-
   firstName: {
     type: String,
     required: true
@@ -16,7 +15,7 @@ var rsvpSchema = new Schema({
   },
   date: {
     type: Date,
-    required: true,
+    // required: true,
     default: Date.now
   },
   status: {
@@ -32,4 +31,3 @@ var rsvpSchema = new Schema({
 var RSVP = mongoose.model("RSVP", rsvpSchema);
 
 module.exports = RSVP;
-
