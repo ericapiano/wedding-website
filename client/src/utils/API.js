@@ -13,9 +13,10 @@ export default {
     console.log("updating rsvp");
     return axios.update('/api/rsvp/:id')
   },
-  postCredentials: function(){
+  postCredentials: function(userData){
     console.log("posting credentials");
-    return axios.post('/api/login/:userName')
+    console.log(userData)
+    return axios.get('/api/login/', userData)
   }
   
 

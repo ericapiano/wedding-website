@@ -8,17 +8,23 @@ class Login extends Component {
     password:""
   }
 // on changing state
-  handleChange(){}
-//  on submit 
+handleChange = event => {
+  const {name, value} = event.target;
+  this.setState({[name]: value});
+}//  on submit 
   handleSubmit = event => {
     event.preventDefault();
 // if empty returns false
     if (!this.state.userName || !this.state.password) {
-      alert("enter valid Username or Password")
+      alert("enter valid Username or Password")//use modal instead
       return false;
     }
+
     API
-    .postCredentials(this.state.userName, this.state.password)
+    .postCredentials({
+      userName: this.state.userName,
+      password: this.state.password
+    })
 
   }
   render() {
@@ -26,12 +32,12 @@ class Login extends Component {
       <div className="form">
         <form action="submit" className="login">
           name
-          <input type="text" />
+          <input name="userName" type="text" onChange={this.handleChange} />
 
           password
-          <input type="text"/>
+          <input name="password"type="text" onChange={this.handleChange}/>
 
-          <button type="submit">submit</button>
+          <button type="submit" onClick={this.handleSubmit}>submit</button>
         </form>
       </div>
     )

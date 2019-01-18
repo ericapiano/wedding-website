@@ -3,8 +3,9 @@ const express = require("express");
 const mongoose = require("mongoose");
 const session = require("express-session");
 const routes = require("./routes");
-const passport = require("passport");
+// const passport = require("passport");
 const app = express();
+const passport = require("passport")
 const path = require("path");
 const PORT = process.env.PORT || 3001; //has to be 3001 as react app uses 3000
 

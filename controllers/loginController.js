@@ -5,12 +5,13 @@ const db = require("../models");
 module.exports = {
 
   findByUsername: function (req, res) {
-    db.Credntials
-      .findById(req.params.id)
+    db.LOGIN
+      .findById(req.body.id)
       .then(credData => res.json(credData))
       .catch(err => {
         console.log(err);
         res.status(422).json(err)
       });
-  }
+  },
+ 
 }
