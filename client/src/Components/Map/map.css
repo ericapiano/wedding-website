@@ -1,3 +1,4 @@
+/* Adds border and box shadow to map. the margins center map on page regardless of page size */
 .map {
   margin-left: auto;
   margin-right: auto;

@@ -34,7 +34,6 @@ figure {
 
 .bioPic {
   border-radius: 50%;
-
   min-height: 300px;
   min-width: 300px;
   height: 20vw;
@@ -57,6 +56,7 @@ figure {
   margin-left: 25px;
 }
 
+/* sets speed that the pictures move onto the screen */
 .bioPic.left {
   animation-name: moveright;
   animation-duration: 1.5s;
@@ -66,6 +66,7 @@ figure {
   animation-duration: 1.5s;
 }
 
+/* presets the images to come in from off screen upon page load */
 @keyframes moveright {
   from {
     right: 50vw;

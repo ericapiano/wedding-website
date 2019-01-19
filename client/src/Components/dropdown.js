@@ -1,3 +1,5 @@
+/* reactstrap is the bootstrap for react projects. it is needed to implement dropdown navbar */
+
 import React from "react";
 import {
   Dropdown,

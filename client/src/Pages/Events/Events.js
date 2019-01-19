@@ -25,29 +25,9 @@ class Events extends Component {
 
         <div className="w3-row">
           <div className="w3-col s5 w3-green w3-center">
-            <Map>
-              {/* <Marker>
-                A pretty CSS3 popup.
-                <br />
-                Easily customizable.
-              </Marker> */}
-            </Map>
-
-            <p>s3</p>
-          </div>
-          <div className="w3-col s7 w3-dark-grey w3-center">
-            <p>s9</p>
+            <Map />
           </div>
         </div>
-
-        {/* <div className="w3-row w3-container">
-          <div className="w3-col s7 w3-green w3-center">
-            <p>s3</p>
-          </div>
-          <div className="w3-col s5 w3-dark-grey w3-center">
-            <p>s9</p>
-          </div>
-        </div> */}
       </div>
     );
   }
