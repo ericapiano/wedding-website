@@ -12,8 +12,8 @@ const Wrapper = styled.div`
 export default class Map extends React.Component {
   componentDidMount() {
     this.map = L.map(`map`, {
-      center: [51.5, -0.09],
-      zoom: 5,
+      center: [40.5308709, -74.53405220000002],
+      zoom: 12,
       zoomControl: false
     });
 
@@ -27,7 +27,12 @@ export default class Map extends React.Component {
       maxZoom: 20
     }).addTo(this.map);
 
-    L.marker([51.5, -0.09])
+    L.marker([40.5308709, -74.53405220000002])
+      .addTo(this.map)
+      .bindPopup("Reception Location.")
+      .openPopup();
+
+    L.marker([40.5409467, -74.49528750000002])
       .addTo(this.map)
       .bindPopup("Ceremony Location.")
       .openPopup();

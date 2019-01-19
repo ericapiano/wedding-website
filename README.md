@@ -16,5 +16,6 @@ registry, guest list, and venue locations. Those invited can use website to RSVP
 -CSS Animation
 -Leaflet Maps
 -Styled-components
+-passport.js
 
 ## Demo Link
