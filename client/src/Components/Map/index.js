@@ -10,6 +10,16 @@ const Wrapper = styled.div`
   height: ${props => props.height};
 `;
 
+const markerIcon = L.icon({
+  iconUrl: "marker.png",
+
+  iconSize: [38, 95], // size of the icon
+  shadowSize: [50, 64], // size of the shadow
+  iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
+  shadowAnchor: [4, 62], // the same for the shadow
+  popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
 /* creates center point of map coordinate to view map on page load*/
 /* convert a street address to its coordinates using https://www.gps-coordinates.net/ */
 
@@ -38,7 +48,7 @@ export default class Map extends React.Component {
     /* convert a street address to its coordinates using https://www.gps-coordinates.net/ */
     /* coordinates for location 1 */
 
-    L.marker([40.5308709, -74.53405220000002])
+    L.marker([40.5308709, -74.53405220000002], { icon: markerIcon })
       .addTo(this.map)
       .bindPopup("Reception Location.")
       .openPopup();
