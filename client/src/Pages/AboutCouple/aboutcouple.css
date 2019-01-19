@@ -2,9 +2,25 @@ figure {
   border-radius: 50%;
 }
 
+.row2 {
+  background-color: rgb(238, 236, 236);
+  margin-left: 70px;
+  margin-right: 70px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 40px;
+}
+
 .no-gutter {
   padding-left: 0;
   padding-right: 0;
+}
+
+.titleCard {
+  /* background-color: rgb(172, 172, 172); */
+  width: 20%;
+  text-align: center;
+  font-family: "Lobster", cursive;
 }
 
 .p1 {
@@ -13,16 +29,18 @@ figure {
 
 .aboutcouple {
   border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .bioPic {
   border-radius: 50%;
 
-  min-height: 200px;
-  min-width: 200px;
+  min-height: 300px;
+  min-width: 300px;
   height: 20vw;
   width: 20vw;
   position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .bioPicContainer {
@@ -32,16 +50,13 @@ figure {
   align-items: center;
 }
 
-.bioPic {
-}
-
 .bioPic.left {
   animation-name: moveright;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
 }
 .bioPic.right {
   animation-name: moveleft;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
 }
 
 @keyframes moveright {

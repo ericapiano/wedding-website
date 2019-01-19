@@ -16,7 +16,6 @@ class Events extends Component {
           // style={styles.cursive}
         >
           <h1 className="display-4">Directions</h1>
-          <br />
           <p>
             <img src={perfectImg} alt="heart" />
           </p>

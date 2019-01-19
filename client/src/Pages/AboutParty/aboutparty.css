@@ -1,8 +1,10 @@
-body{
-  overflow-x: hidden
+body {
+  overflow-x: hidden;
 }
 /* no horizontal scroll, want all the images in center of container, flip image background */
-.bride-container, .groom, .flip-box-back{ 
+.bride-container,
+.groom,
+.flip-box-back {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,6 +20,12 @@ body{
 
   box-shadow: 2px 2px 1px 1px #aaa;
   margin: 10px;
+}
+
+.info {
+  font-size: 16px;
+  margin-right: 25px;
+  margin-left: 25px;
 }
 
 /* This container is needed to position the front and back side */
@@ -36,7 +44,8 @@ body{
 }
 
 /* Position the front and back side */
-.flip-box-front, .flip-box-back {
+.flip-box-front,
+.flip-box-back {
   position: absolute;
   width: 100%;
   height: 100%;

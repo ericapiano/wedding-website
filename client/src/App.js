@@ -6,10 +6,9 @@ import AboutParty from "./Pages/AboutParty";
 import AboutCouple from "./Pages/AboutCouple";
 import Homepage from "./Pages/Home";
 import RSVP from "./Pages/RSVP";
-// import Directions from "./Pages/Directions";
 import Events from "./Pages/Events";
 import Login from "./Pages/Login";
-import GuestList from "./Pages/GuestList"
+import GuestList from "./Pages/GuestList";
 
 const App = () => {
   return (
