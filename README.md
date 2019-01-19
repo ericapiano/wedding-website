@@ -1,16 +1,20 @@
 # wedding-website
 
-A customizable wedding website for brides and grooms to manage their
-registry and guest list. Initited persons can view site to RSVP with answer and headcount, search registry, get directions for wedding events and read about the couple and bridal party.
+A customizable wedding website for couples to manage their
+registry, guest list, and venue locations. Those invited can use website to RSVP with attendance status and headcount, browse registry, get directions to wedding events and read about the couple and bridal party.
 
 ## Tech Used
 
--React
--Express
 -MonogoDB
+-Express
+-React
 -Mongoose
--Axios
 -Node.js
+-Axios
 -reactstrap
+-CSS3
+-CSS Animation
+-Leaflet Maps
+-Styled-components
 
 ## Demo Link
