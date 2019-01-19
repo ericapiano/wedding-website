@@ -1,46 +1,37 @@
-
 import React, { Component } from "react";
-import API from '../../utils/API';
+import "./Events.css";
+// import perfectImg from "../images/";
+import perfectImg from "../images/perfect.png";
+import { Container, Row, Col } from "reactstrap";
 
 class Events extends Component {
-  state = {
-    Events: []
-  };
-  componentDidMount() {
-    this.getEvents();
-  }
+  state = {};
 
-  getEvents = () => {
-    API.getAllEvents()
-      .then(({ data }) => {
-        this.setState({ Events: data });
-        console.log(this.state);
-      })
-      .catch(err => console.log(err))
-  }
   render() {
     return (
+      <div>
+        <div
+          className="jumbotron jumbotron-fluid text-center d-flex align-items-center justify-content-center"
+          // style={styles.jumbotron}
+          // style={styles.cursive}
+        >
+          <h1 className="display-4">Directions</h1>
+          <br />
+          <p>
+            <img src={perfectImg} alt="heart" />
+          </p>
 
-      <div  className="eventlist">
-        <h1>Events</h1>
-        {
-          this.state.Events.map(event => {
-            return (
-              <div className="event" key={event.id}>
-                <h3 className="heading">
-                  {event.eventName}
-                </h3>
-                <h5>
-                  {event.date}
-                </h5>
-                <h5>{event.locationName}</h5>
-              </div>
-            )
-          })
-        }
+          {/* <p>Looking to meet your next best friend?</p> */}
+        </div>
+        <div className="container my-5">
+          <div className="row">
+            <div className="col-12">
+              {/* <p>Looking to meet your next best friend?</p> */}
+            </div>
+          </div>
+        </div>
       </div>
-
-    )
+    );
   }
 }
 

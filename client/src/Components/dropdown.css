@@ -9,6 +9,16 @@
 
 .dropdown-item:hover {
   font-weight: 600;
-  background-color: black;
+  background-color: rgb(122, 121, 122);
+  color: white;
+}
+
+#navbarNav > ul > li:nth-child(2) > div > div {
+  background-color: black !important;
+  color: rgb(255, 254, 254) !important;
+  font-weight: 500 !important;
+}
+
+.dropdown-item {
   color: white;
 }
