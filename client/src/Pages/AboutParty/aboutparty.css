@@ -22,12 +22,6 @@ body {
   margin: 10px;
 }
 
-.info {
-  font-size: 16px;
-  margin-right: 25px;
-  margin-left: 25px;
-}
-
 /* This container is needed to position the front and back side */
 .flip-box-inner {
   position: relative;

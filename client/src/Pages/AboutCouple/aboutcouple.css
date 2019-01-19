@@ -48,6 +48,13 @@ figure {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
+}
+
+.info {
+  font-size: 16px;
+  margin-right: 25px;
+  margin-left: 25px;
 }
 
 .bioPic.left {
