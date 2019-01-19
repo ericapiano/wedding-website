@@ -24,7 +24,7 @@ export default class Map extends React.Component {
       .addTo(this.map);
 
     L.tileLayer(`https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png`, {
-      maxZoom: 20
+      maxZoom: 50
     }).addTo(this.map);
 
     L.marker([40.5308709, -74.53405220000002])
