@@ -9,15 +9,17 @@ export default {
     console.log("getting rsvp with axios");
     return axios.get('/api/rsvp/')
   },
-  updateRsvp: function(){
-    console.log("updating rsvp");
-    return axios.update('/api/rsvp/:id')
+  updateStatusRsvp: function(guestId , obj){
+    // console.log("updating rsvp 11111");
+    return axios.put(`/api/rsvp/${guestId}`,obj) 
+  },
+  updateCountRsvp: function(guestId , obj){
+    // console.log("updating rsvp 11111");
+    return axios.put(`/api/rsvp/${guestId}`,obj) 
   },
   postCredentials: function(userData){
     console.log("posting credentials");
     console.log(userData)
-    return axios.get('/api/login/', userData)
+    return axios.post('/api/login/', userData)
   }
-  
-
-}
+  }

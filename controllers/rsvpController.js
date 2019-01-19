@@ -6,12 +6,25 @@ module.exports = {
   findAll: function(req, res) {
     db.RSVP.find(req.query)
       .sort({ date: -1 })
-      .then(dbModel => res.json(dbModel))
+      .then(dbModel =>{ res.json(dbModel)})
       .catch(err => res.status(422).json(err));
   },
-  create: function(req, res) {
-    db.RSVP.create(req.body)
-      .then(dbModel => res.json(dbModel))
-      .catch(err => res.status(422).json(err));
+  updateStatus: function(req, res) {
+    console.log("updatingstatus")
+    db.RSVP.findOneAndUpdate({ _id: req.params.id }, req.body)
+    .then(dbRsvpData => res.json(dbRsvpData))
+    .catch(err => {
+      console.log(err);
+      res.status(422).json(err)
+    });
+  },
+  updateCount: function(req, res) {
+    console.log("updatingcount")
+    db.RSVP.findOneAndUpdate({ _id: req.params.id }, req.body)
+    .then(dbRsvpData => res.json(dbRsvpData))
+    .catch(err => {
+      console.log(err);
+      res.status(422).json(err)
+    });
   }
 };

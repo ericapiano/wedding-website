@@ -12,21 +12,18 @@ const rsvpListSeed = [
   {
     firstName: "Dhanashree",
     lastName: "Phalak",
-    peopleCount: 1,
     status: "Attending",
     date: new Date(Date.now()),
   },
   {
     firstName: "Shivani",
     lastName: "Choudhary",
-    peopleCount: 1,
     status: "May be",
     date: new Date(Date.now())
   },
   {
     firstName: "Bhagyashree",
     lastName: "abc",
-    peopleCount: 1,
     status: "Not Attending",
     date: new Date(Date.now())
   }

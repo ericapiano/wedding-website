@@ -20,11 +20,12 @@ var rsvpSchema = new Schema({
   },
   status: {
     type: String,
-    required: true
+    required: true,
   },
   peopleCount: {
     type: Number,
-    required: true
+    required: true,
+    default: 0
   }
 });
 
