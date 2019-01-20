@@ -60,7 +60,7 @@ const registryListSeed = [
     locationName: "Not yet done"
   },
 ]
-const loginSeed = [
+const userSeed = [
   {
     userName: "jack",
     password: "abcd"
@@ -75,11 +75,11 @@ const loginSeed = [
   }
 ]
 
-  db.LOGIN
+  db.USER
   .remove({})
-  .then(() => db.LOGIN.collection.insertMany(loginSeed))
+  .then(() => db.USER.collection.insertMany(userSeed))
   .then(data => {
-    console.log(data.length + " LOGIN records inserted!");
+    console.log(data.length + " user records inserted!");
   })
   .catch(err => {
     console.error(err);

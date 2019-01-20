@@ -1,5 +1,4 @@
 const passport = require("passport");
-const controller = require("./controllers/loginController")
 const LocalStrategy = require("passport-local").Strategy;
 
 const db = require("./models");

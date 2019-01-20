@@ -21,5 +21,25 @@ export default {
     console.log("posting credentials");
     console.log(userData)
     return axios.post('/api/login/', userData)
-  }
+  },
+// =============login routes===========
+  /* 
+    loginCreds = {username: "alex", "password": 12345Password!}
+  */
+  login: function(loginCreds) {
+    return axios.post('/api/login', loginCreds)
+  },
+  /* 
+    Path to check if user is logged in
+  */
+  loginCheck: function() {
+    return axios.get('/api/login')
+  },
+  /* 
+    Path to log out
+  */
+  logout: function() {
+    return axios.get('/api/logout')
+  },
+
   }
