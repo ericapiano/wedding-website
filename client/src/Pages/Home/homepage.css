@@ -1,3 +1,5 @@
+/* sets background image for body of every page on website. only needed to be on this page. sets it so that the bakcground image is fullscreen of page regardless of screen size and scrolling */
+
 body:after {
   content: "";
   position: fixed;
