@@ -42,6 +42,7 @@ body:after {
 
 .letter {
   margin-right: 4px;
+  font-family: "Great Vibes", cursive;
 }
 .date {
   font-size: 35px;
