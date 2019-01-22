@@ -38,11 +38,13 @@ body:after {
 .number {
   margin-right: 4px;
   height: 10px;
+  font-family: "Libre Baskerville", serif;
 }
 
 .letter {
-  margin-right: 4px;
+  margin-right: 15px;
   font-family: "Great Vibes", cursive;
+  font-size: 30px;
 }
 .date {
   font-size: 35px;
