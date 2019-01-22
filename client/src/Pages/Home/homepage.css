@@ -28,7 +28,7 @@ body:after {
 }
 
 .jumbotron {
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 .Countdown {
@@ -37,6 +37,7 @@ body:after {
 
 .number {
   margin-right: 4px;
+  height: 10px;
 }
 
 .letter {

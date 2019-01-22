@@ -27,7 +27,7 @@ export default class Map extends React.Component {
   componentDidMount() {
     this.map = L.map(`map`, {
       center: [40.5308709, -74.53405220000002],
-      zoom: 12,
+      zoom: 14,
       zoomControl: false
     });
 

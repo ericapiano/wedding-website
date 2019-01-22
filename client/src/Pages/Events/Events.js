@@ -35,7 +35,7 @@ class Events extends Component {
           <Container />
           <Row className="row2">
             <Col className="column " xs="3">
-              <p className="titleCard">Rehersal</p>
+              <p className="titleCard2">Rehersal</p>
               <div className="small">
                 Friday, June 21, 2019
                 <br />
@@ -51,7 +51,7 @@ class Events extends Component {
             </Col>
 
             <Col className="column " xs="3">
-              <p className="titleCard">Ceremony</p>
+              <p className="titleCard2">Ceremony</p>
               <p>
                 {" "}
                 <div className="small">
@@ -70,7 +70,7 @@ class Events extends Component {
             </Col>
 
             <Col className="column " xs="3">
-              <p className="titleCard">Reception</p>
+              <p className="titleCard2">Reception</p>
               <div className="small">
                 Friday, June 22, 2019
                 <br />
