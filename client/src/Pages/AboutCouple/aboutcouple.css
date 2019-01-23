@@ -1,10 +1,27 @@
 figure {
   border-radius: 50%;
 }
+.jumbotron{
+  padding-bottom: 0px;
+}
+.row2 {
+  background-color: rgba(238, 236, 236, 0.6);
+  margin: 2% 5%;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 40px;
+}
 
 .no-gutter {
   padding-left: 0;
   padding-right: 0;
+}
+
+.titleCard {
+  /* background-color: rgb(172, 172, 172); */
+  width: 20%;
+  text-align: center;
+  font-family: "Lobster", cursive;
 }
 
 .p1 {
@@ -13,16 +30,17 @@ figure {
 
 .aboutcouple {
   border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .bioPic {
   border-radius: 50%;
-
-  min-height: 200px;
-  min-width: 200px;
+  min-height: 300px;
+  min-width: 300px;
   height: 20vw;
   width: 20vw;
   position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .bioPicContainer {
@@ -30,20 +48,26 @@ figure {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
 
-.bioPic {
+.info {
+  font-size: 16px;
+  margin-right: 25px;
+  margin-left: 25px;
 }
 
+/* sets speed that the pictures move onto the screen */
 .bioPic.left {
   animation-name: moveright;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
 }
 .bioPic.right {
   animation-name: moveleft;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
 }
 
+/* presets the images to come in from off screen upon page load */
 @keyframes moveright {
   from {
     right: 50vw;

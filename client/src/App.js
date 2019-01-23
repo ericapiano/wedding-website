@@ -6,16 +6,16 @@ import AboutParty from "./Pages/AboutParty";
 import AboutCouple from "./Pages/AboutCouple";
 import Homepage from "./Pages/Home";
 import RSVP from "./Pages/RSVP";
-// import Directions from "./Pages/Directions";
 import Events from "./Pages/Events";
 import Login from "./Pages/Login";
-import GuestList from "./Pages/GuestList"
-
+import GuestList from "./Pages/GuestList";
+import Names from "./Components/Names"
 const App = () => {
   return (
     <Router>
       <div>
         <Navbar />
+        <Names/>
         <Route exact path="/" component={Homepage} />
         <Route exact path="/about-couple" component={AboutCouple} />
         <Route exact path="/about-party" component={AboutParty} />

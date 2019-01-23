@@ -27,38 +27,23 @@ class AboutCouple extends Component {
           >
             <h1 className="display-4">Our Love Story</h1>
 
-            <p>
+            {/* <p> */}
               <img src={perfectImg} alt="heart" />
-            </p>
+            {/* </p> */}
           </div>
 
           <div>
             <Container />
-            <Row className="row">
+            <Row className="row2">
               <Col className="column bioPicContainer" xs="6">
-                <p>
-                  {/* <img
-                  className="weddingParty"
-                  src={bride}
-                  alt="sorry, image not found."
-                /> */}
-                </p>
-
                 <img
                   className="bioPic left"
                   src="https://image.shutterstock.com/mosaic_250/2967241/657764164/stock-photo-portrait-of-beautiful-redhead-girl-smiling-looking-at-camera-657764164.jpg"
                   alt="Bride"
                 />
-                <p>Bride</p>
+                <p className="titleCard">Bride</p>
               </Col>
               <Col className="column bioPicContainer" xs="6">
-                <p>
-                  {/* <img
-                  className="weddingParty"
-                  src={groom}
-                  alt="sorry, image not found."
-                /> */}
-                </p>
                 <figure className="bioPic right">
                   <img
                     className="bioPic"
@@ -67,8 +52,18 @@ class AboutCouple extends Component {
                   />
                 </figure>
 
-                <p>Groom</p>
+                <p className="titleCard">Groom</p>
               </Col>
+
+              <p className="info">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Suscipit consectetur sint qui officiis velit beatae voluptatibus
+                eveniet quam totam id, eos quaerat amet veniam deleniti sequi
+                itaque. Ea, vitae ullam! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Neque, officiis provident? Facilis, ipsam iste
+                possimus cupiditate rerum obcaecati beatae et delectus numquam
+                doloremque vitae, iure voluptate quasi impedit architecto non.
+              </p>
             </Row>
           </div>
         </div>

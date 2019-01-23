@@ -1,0 +1,30 @@
+body{
+  background-color: rgba(255, 255, 255, 0);
+  font-family: 'Dancing Script', cursive;
+}
+.Jack, .and, .Jill{
+  width: 12%;
+  padding: 1%;
+  font-weight: bolder;
+  /* border: 1px solid black; */
+  position: absolute;
+  font-size: 500%;
+  color: gradient();
+  transform: rotate(-20deg);
+  background-image: url("./pur.jpg");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Jill{
+left: 40%;
+}
+.and{
+  left: 48%;
+  top: 2%;
+  font-size: 200%;
+}
+.Jack{
+  left: 41%;
+  top: 11%;
+}

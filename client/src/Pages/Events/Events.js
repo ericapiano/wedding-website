@@ -1,46 +1,35 @@
-
 import React, { Component } from "react";
-import API from '../../utils/API';
+import "./Events.css";
+// import perfectImg from "../images/";
+import perfectImg from "../images/perfect.png";
+import { Container, Row, Col } from "reactstrap";
+import Map from "../../Components/Map";
+import { Marker } from "leaflet";
 
 class Events extends Component {
-  state = {
-    Events: []
-  };
-  componentDidMount() {
-    this.getEvents();
-  }
+  state = {};
 
-  getEvents = () => {
-    API.getAllEvents()
-      .then(({ data }) => {
-        this.setState({ Events: data });
-        console.log(this.state);
-      })
-      .catch(err => console.log(err))
-  }
   render() {
     return (
+      <div>
+        <div
+          className="jumbotron jumbotron-fluid text-center d-flex align-items-center justify-content-center"
+          // style={styles.jumbotron}
+          // style={styles.cursive}
+        >
+          <h1 className="display-4">Directions</h1>
+          <p>
+            <img src={perfectImg} alt="heart" />
+          </p>
+        </div>
 
-      <div  className="eventlist">
-        <h1>Events</h1>
-        {
-          this.state.Events.map(event => {
-            return (
-              <div className="event" key={event.id}>
-                <h3 className="heading">
-                  {event.eventName}
-                </h3>
-                <h5>
-                  {event.date}
-                </h5>
-                <h5>{event.locationName}</h5>
-              </div>
-            )
-          })
-        }
+        <div className="w3-row">
+          <div className="w3-col s5 w3-green w3-center">
+            <Map />
+          </div>
+        </div>
       </div>
-
-    )
+    );
   }
 }
 

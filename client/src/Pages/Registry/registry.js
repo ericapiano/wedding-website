@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import perfectImg from "../images/perfect.png";
 
 import "./registry.css";
 // import dogpic from "./images/pups.jpg";
@@ -34,6 +35,10 @@ class Registry extends Component {
         >
           <h1 className="display-4">Thank You Kindly</h1>
           {/* <p>Looking to meet your next best friend?</p> */}
+
+          <p>
+            <img src={perfectImg} alt="heart" />
+          </p>
         </div>
         <div className="container my-5">
           <div className="row">

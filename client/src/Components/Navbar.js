@@ -15,12 +15,12 @@ const styles = {
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg" style={styles.villan}>
+    <nav className="navbar navbar-expand-lg " style={styles.villan}>
       <Link to="/" className="navbar-brand" style={styles.navLink}>
         {/* Wedding Website */}
       </Link>
       <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav">
+        <ul className="navbar-nav nav-animate">
           <li className="nav-item">
             <Link
               to="/"
