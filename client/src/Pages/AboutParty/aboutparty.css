@@ -52,7 +52,19 @@
 
 /* Style the back side */
 .flip-box-back {
-  background-color: dodgerblue;
-  color: white;
+  background-color: #e9ecef;
+  color: black;
   transform: rotateY(180deg);
+  font-family: "Libre Baskerville", serif;
+  font-size: 40px;
+}
+
+.fancy {
+  font-family: "Great Vibes", cursive;
+  font-size: 30px;
+}
+
+.tiny {
+  height: 30px;
+  width: 30px;
 }

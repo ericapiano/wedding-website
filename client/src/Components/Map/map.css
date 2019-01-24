@@ -24,6 +24,14 @@
   width: 80px !important;
 }
 
+#map
+  > div.leaflet-pane.leaflet-map-pane
+  > div.leaflet-pane.leaflet-marker-pane
+  > img:nth-child(3) {
+  height: 80px !important;
+  width: 80px !important;
+}
+
 .marker {
   background-color: aqua;
 }

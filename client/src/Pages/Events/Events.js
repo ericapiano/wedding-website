@@ -1,16 +1,31 @@
 import React, { Component } from "react";
-import "./Events.css";
-// import perfectImg from "../images/";
-import perfectImg from "../images/perfect.png";
-import { Container, Row, Col } from "reactstrap";
+import API from "../../utils/API";
 import Map from "../../Components/Map";
 import { Marker } from "leaflet";
+import "./Events.css";
+import perfectImg from "../images/perfect.png";
+import { Container, Row, Col } from "reactstrap";
 import middleHeart from "../images/middleHeart.png";
 import time from "../images/time.png";
 
 class Events extends Component {
-  state = {};
+  state = {
+    Events: []
+  };
+  componentDidMount() {
+    this.getEvents();
+    console.log("getevents triggerred here");
+  }
 
+  getEvents = () => {
+    API.getAllEvents()
+      .then(({ data }) => {
+        this.setState({ Events: data });
+        console.log("working till here");
+        console.log(this.state);
+      })
+      .catch(err => console.log(err));
+  };
   render() {
     return (
       <div>
@@ -24,62 +39,32 @@ class Events extends Component {
             <img src={perfectImg} alt="heart" />
           </p>
         </div>
-
-        <div className="w3-row">
-          <div className="w3-col s5 w3-green w3-center">
-            <Map />
-          </div>
-
-          <br />
-
-          <Container />
-          <Row className="row2">
-            <Col className="column " xs="3">
-              <p className="titleCard2">Rehersal</p>
-              <div className="small">
-                Friday, June 21, 2019
-                <br />
-                Saint Francis Cabrini Church{" "}
-              </div>{" "}
-              <img className="time" src={time} alt="time" />
-            </Col>
-
-            <Col className="column " xs="1">
-              {" "}
-              <br />
-              <img className="middleHeart" src={middleHeart} alt="heart" />
-            </Col>
-
-            <Col className="column " xs="3">
-              <p className="titleCard2">Ceremony</p>
-              <p>
+        <Map />
+        <div className="eventlist">
+          {this.state.Events.map(event => {
+            return (
+              //   <div className="event" key={event._id}>
+              //     <h3 className="heading">{event.eventName}</h3>
+              //     <h5>{event.date}</h5>
+              //     <h5>{event.locationName}</h5>
+              // <img
+              //   className="middleHeart"
+              //   src={middleHeart}
+              //   alt="heart"
+              // />{" "}
+              //   </div>
+              // );
+              // <Container />{" "}
+              <Row className="row2">
                 {" "}
-                <div className="small">
-                  Friday, June 22, 2019
-                  <br />
-                  Saint Francis Cabrini Church
-                </div>{" "}
-              </p>
-              <img className="time" src={time} alt="time" />
-            </Col>
-
-            <Col className="column " xs="1">
-              {" "}
-              <br />
-              <img className="middleHeart" src={middleHeart} alt="heart" />
-            </Col>
-
-            <Col className="column " xs="3">
-              <p className="titleCard2">Reception</p>
-              <div className="small">
-                Friday, June 22, 2019
-                <br />
-                The Palace at Somerset Park{" "}
-              </div>{" "}
-              <img className="time" src={time} alt="time" />
-              <p />
-            </Col>
-          </Row>
+                <Col className="column " key={event._id} xs="3">
+                  <p className="titleCard2">{event.eventName}</p>{" "}
+                  <div className="small">{event.locationName}</div>{" "}
+                  <img className="time" src={time} alt="time" /> {event.date}
+                </Col>{" "}
+              </Row>
+            );
+          })}
         </div>
       </div>
     );

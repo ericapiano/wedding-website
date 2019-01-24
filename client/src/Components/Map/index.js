@@ -27,7 +27,7 @@ export default class Map extends React.Component {
   componentDidMount() {
     this.map = L.map(`map`, {
       center: [40.5308709, -74.53405220000002],
-      zoom: 14,
+      zoom: 12,
       zoomControl: false
     });
 
@@ -58,6 +58,12 @@ export default class Map extends React.Component {
     L.marker([40.5409467, -74.49528750000002], { icon: markerIcon })
       .addTo(this.map)
       .bindPopup("Ceremony Location.")
+      .openPopup();
+
+    /* 3rd location */
+    L.marker([40.5689887, -74.48933319999998], { icon: markerIcon })
+      .addTo(this.map)
+      .bindPopup("Rehersal Location.")
       .openPopup();
   }
 
