@@ -7,7 +7,7 @@
   margin-top: 55px;
 }
 
-/* custom sizing for each marker on map. (1) is the reception. (2) is the ceremony */
+/* custom sizing for each marker image on map. (1) is the reception. (2) is the ceremony. (3) is rehersal dinner */
 #map
   > div.leaflet-pane.leaflet-map-pane
   > div.leaflet-pane.leaflet-marker-pane
@@ -32,6 +32,14 @@
   width: 80px !important;
 }
 
-.marker {
-  background-color: aqua;
+/* edits the pop up (bubble above pin point on map) background color, font size and style */
+#map
+  > div.leaflet-pane.leaflet-map-pane
+  > div.leaflet-pane.leaflet-popup-pane
+  > div
+  > div.leaflet-popup-content-wrapper {
+  background-color: rgb(144, 138, 138);
+  color: white;
+  font-family: "Lobster", cursive;
+  font-size: 25px;
 }
