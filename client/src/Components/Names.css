@@ -3,8 +3,10 @@ body{
   font-family: 'Dancing Script', cursive;
 }
 .Jack, .and, .Jill{
-  width: 12%;
+  width: 15%;
   padding: 1%;
+  font-family: "Great Vibes", cursive;
+
   font-weight: bolder;
   /* border: 1px solid black; */
   position: absolute;
@@ -20,11 +22,11 @@ body{
 left: 40%;
 }
 .and{
-  left: 48%;
-  top: 2%;
+  left: 50%;
+  top: 9%;
   font-size: 200%;
 }
 .Jack{
-  left: 41%;
-  top: 11%;
+  left: 42%;
+  top: 20%;
 }

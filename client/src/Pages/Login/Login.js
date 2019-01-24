@@ -90,12 +90,22 @@ class Login extends Component {
       })
       .catch(err => console.log(err.response));
   }
+  register = (e) => {
+    e.preventDefault();
+    
+    API.register({username: this.state.username, password: this.state.password})
+    .then(res => {
+      console.log(res.data);
+      console.log("registered successfully")
+    })
+
+  }
 
   render() {
     // If user is logged in, take them to main page
-    if (this.state.isLoggedIn) {
-      return <Redirect to="/"/>
-    }
+    // if (this.state.isLoggedIn) {
+    //   return <Redirect to="/"/>
+    // }
 
     return (
       <div className="container my-5">
@@ -126,6 +136,7 @@ class Login extends Component {
             </div>
 
             <button type="submit" className="btn btn-success" onClick={this.login}>Login</button>
+            <button type="submit" className="btn btn-success" onClick={this.register}>Register</button>
           </form>
 
         </div>

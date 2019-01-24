@@ -14,18 +14,22 @@ const rsvpListSeed = [
     lastName: "Phalak",
     status: "Attending",
     date: new Date(Date.now()),
+    peopleCount: 4,
   },
   {
     firstName: "Shivani",
     lastName: "Choudhary",
     status: "May be",
-    date: new Date(Date.now())
+    date: new Date(Date.now()),
+    peopleCount: 2,
+
   },
   {
     firstName: "Bhagyashree",
     lastName: "abc",
     status: "Not Attending",
-    date: new Date(Date.now())
+    date: new Date(Date.now()),
+    peopleCount: 1
   }
 ]
 const eventListSeed = [

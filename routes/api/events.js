@@ -3,7 +3,7 @@ const eventsController = require("../../controllers/eventsController");
 
 // Matches with "/api/events"
 router.route("/")
-  .post(eventsController.findAll)
+  .get(eventsController.findAll)
   
 
 module.exports = router;

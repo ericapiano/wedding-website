@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./rsvp.css";
 import API from "../../utils/API";
-import { timingSafeEqual } from "crypto";
+// import { timingSafeEqual } from "crypto";
 
 class Rsvp extends Component {
   state = {
@@ -25,7 +25,7 @@ class Rsvp extends Component {
   // finding people in db
   handleInputChange = e => {
     let name = e.target.value;
-    if (name != "") {
+    if (name !== "") {
       this.setState({
         FilterGuests: this.state.Rsvp.filter(guest => {
           return guest.firstName.startsWith(name);//does it takes starts with?/?????
