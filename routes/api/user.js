@@ -4,7 +4,7 @@ const usersController = require('../../controllers/usersController');
 
 // Matches with "/api/user/login"
 router
-  .route('/')
+  .route('/login')
   .post(passport.authenticate('local'), function(req, res) {
     // Log in and send back user information
     console.log(req.user);

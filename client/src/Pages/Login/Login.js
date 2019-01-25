@@ -85,6 +85,7 @@ class Login extends Component {
       .login({username: this.state.username, password: this.state.password})
       .then(res => {
         console.log(res.data);
+        console.log("logged in")
         this.setState({isLoggedIn: res.data})
 
       })
@@ -97,15 +98,16 @@ class Login extends Component {
     .then(res => {
       console.log(res.data);
       console.log("registered successfully")
+
     })
 
   }
 
   render() {
     // If user is logged in, take them to main page
-    // if (this.state.isLoggedIn) {
-    //   return <Redirect to="/"/>
-    // }
+    if (this.state.isLoggedIn) {
+      return <Redirect to="/guestlist"/>
+    }
 
     return (
       <div className="container my-5">

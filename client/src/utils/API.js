@@ -23,13 +23,13 @@ export default {
     loginCreds = {username: "alex", "password": 12345Password!}
   */
   login: function(loginCreds) {
-    return axios.post('/api/login/', loginCreds)
+    return axios.post('/api/user/login', loginCreds)
   },
   /* 
     Path to check if user is logged in
   */
   loginCheck: function() {
-    return axios.get('/api/login')
+    return axios.get('/api/user/login')
   },
   /* 
     Path to log out
@@ -39,6 +39,6 @@ export default {
   },
   register: function(loginCreds){
     console.log("registering new user")
-    return axios.post('/api/register', loginCreds)
+    return axios.post('/api/user/register', loginCreds)
   }
   }

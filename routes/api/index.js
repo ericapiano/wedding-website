@@ -9,7 +9,6 @@ const userRoute = require("./user");
 router.use("/events", eventsRoutes);
 router.use("/rsvp", rsvpRoutes);
 router.use("/registry", registryRoutes);
-router.use("/login", userRoute);
-router.use("/register", userRoute);
+router.use("/user", userRoute);
 
 module.exports = router;
