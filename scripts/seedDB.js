@@ -12,23 +12,24 @@ const rsvpListSeed = [
   {
     firstName: "Dhanashree",
     lastName: "Phalak",
-    peopleCount: 1,
     status: "Attending",
     date: new Date(Date.now()),
+    peopleCount: 4,
   },
   {
     firstName: "Shivani",
     lastName: "Choudhary",
-    peopleCount: 1,
     status: "May be",
-    date: new Date(Date.now())
+    date: new Date(Date.now()),
+    peopleCount: 2,
+
   },
   {
     firstName: "Bhagyashree",
     lastName: "abc",
-    peopleCount: 1,
     status: "Not Attending",
-    date: new Date(Date.now())
+    date: new Date(Date.now()),
+    peopleCount: 1
   }
 ]
 const eventListSeed = [
@@ -63,7 +64,7 @@ const registryListSeed = [
     locationName: "Not yet done"
   },
 ]
-const loginSeed = [
+const userSeed = [
   {
     userName: "jack",
     password: "abcd"
@@ -78,11 +79,11 @@ const loginSeed = [
   }
 ]
 
-  db.LOGIN
+  db.USER
   .remove({})
-  .then(() => db.LOGIN.collection.insertMany(loginSeed))
+  .then(() => db.USER.collection.insertMany(userSeed))
   .then(data => {
-    console.log(data.length + " LOGIN records inserted!");
+    console.log(data.length + " user records inserted!");
   })
   .catch(err => {
     console.error(err);

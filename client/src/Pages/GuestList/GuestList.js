@@ -5,7 +5,6 @@ class GuestList extends Component {
   state ={
     GuestName:"",
 
-
   }
 
 }

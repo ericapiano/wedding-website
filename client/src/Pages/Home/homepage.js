@@ -38,7 +38,7 @@ class Homepage extends Component {
           <h1 className="display-4">Jack and Jill</h1>
           <br />
           <p>
-            <img src={perfectImg} alt="heart" />
+            <img className="heart" src={perfectImg} alt="heart" />
           </p>
           <p className="date">June 22, 2019</p>
           <Countdown className="counter" date={`${year}-06-20T00:00:00`} />
