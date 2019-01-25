@@ -56,6 +56,8 @@
   font-size: 40px;
   margin-top: 55px;
   margin-bottom: 55px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 #root > div > div > div.eventlist.row > div:nth-child(1) > div {
