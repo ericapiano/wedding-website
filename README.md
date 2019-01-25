@@ -8,8 +8,8 @@ registry, guest list, and venue locations. Those invited can use website to RSVP
 -MonogoDB
 -Express
 -React
--Mongoose
 -Node.js
+-Mongoose
 -Axios
 -reactstrap
 -CSS3
@@ -17,5 +17,6 @@ registry, guest list, and venue locations. Those invited can use website to RSVP
 -Leaflet Maps
 -Styled-components
 -passport.js
+-react-moment
 
 ## Demo Link
