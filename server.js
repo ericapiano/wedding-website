@@ -3,12 +3,12 @@ const express = require("express");
 const mongoose = require("mongoose");
 const session = require("express-session");
 const routes = require("./routes");
-const bodyParser = require('body-parser');
-const morgan = require('morgan');
-const passport = require("passport")
+const bodyParser = require("body-parser");
+const morgan = require("morgan");
+const passport = require("passport");
 const app = express();
 const path = require("path");
-const LocalStrategy = require('passport-local').Strategy;
+const LocalStrategy = require("passport-local").Strategy;
 const PORT = process.env.PORT || 3001; //has to be 3001 as react app uses 3000
 
 // Define middleware here
@@ -19,28 +19,16 @@ app.use(express.json());
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
-app.use(session({secret: "keyboard cat", resave: true, saveUninitialized: true}));
+app.use(
+  session({ secret: "keyboard cat", resave: true, saveUninitialized: true })
+);
 app.use(passport.initialize());
 app.use(passport.session());
 // Add routes, both API and view
 app.use(routes);
 
-const User = require('./models/user');
-// passport.use(new LocalStrategy(User.authenticate()));
-// passport.use(new LocalStrategy(
-//   function(username, password, done) {
-//     User.findOne({ username: username }, function (err, creds) {
-//       if (err) { return done(err); }
-//       if (!creds) {
-//         return done(null, false, { message: 'Incorrect credsname.' });
-//       }
-//       if (!User.validPassword(password)) {
-//         return done(null, false, { message: 'Incorrect password.' });
-//       }
-//       return done(null, creds);
-//     });
-//   }
-// ))
+const User = require("./models/user");
+
 passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());

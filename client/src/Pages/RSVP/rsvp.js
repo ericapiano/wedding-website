@@ -28,7 +28,7 @@ class Rsvp extends Component {
     if (name !== "") {
       this.setState({
         FilterGuests: this.state.Rsvp.filter(guest => {
-          return guest.firstName.startsWith(name);//does it takes starts with?/?????
+          return guest.firstName.startsWith(name); //does it takes starts with?/?????
         })
       });
     } else {
@@ -53,14 +53,14 @@ class Rsvp extends Component {
     this.setState({ status: event.target.value });
     //iterate through array to check id  ;
     for (var i = 0; i < rsvp.length; i++) {
-      console.log(rsvp[i])
+      console.log(rsvp[i]);
       if (rsvp[i]._id === rsvpId) {
         console.log("matched");
         rsvp[i].status = event.target.value;
-        API.updateStatusRsvp(rsvpId, rsvp[i])
+        API.updateStatusRsvp(rsvpId, rsvp[i]);
       }
     }
-  }
+  };
   // let user change their status
 
   handleCountChange = (rsvpId, event) => {
@@ -69,54 +69,63 @@ class Rsvp extends Component {
     this.setState({ value: event.target.value });
     //iterate through array to check id  ;
     for (var i = 0; i < rsvp.length; i++) {
-      console.log(rsvp[i])
+      console.log(rsvp[i]);
       if (rsvp[i]._id === rsvpId) {
         console.log("matched");
         rsvp[i].peopleCount = event.target.value;
-        API.updateCountRsvp(rsvpId, rsvp[i])
+        API.updateCountRsvp(rsvpId, rsvp[i]);
       }
-
     }
     // console.log(...this.state.Rsvp)
-
-
-  }
-
-
-
-
+  };
 
   render() {
     return (
       <div className="rsvplist">
         <h1>RSVP</h1>
-        <input className="search" onChange={e => this.handleInputChange(e)} />
-        <button className="searchBtn" type="submit">Search</button>
+        <input
+          className="search"
+          placeholder="search for your name..."
+          onChange={e => this.handleInputChange(e)}
+        />
+        <button className="searchBtn" type="submit">
+          Search
+        </button>
 
         {this.state.FilterGuests.map((rsvp, index) => {
           return (
-
             <div className="rsvp nameClick" key={rsvp._id}>
               <span className="heading">{rsvp.firstName}</span>
-              <span>{rsvp.lastName}</span>
+              <span className="lastNameMargin">{rsvp.lastName}</span>
               <span>
-                <select value={this.state.value} onChange={event => this.handleStatusChange(rsvp._id, event)}>
+                <select
+                  className="float1"
+                  value={this.state.value}
+                  onChange={event => this.handleStatusChange(rsvp._id, event)}
+                >
                   <option value="default">{this.state.status}</option>
                   <option value="Attending">Attending</option>
                   <option value="May Be">May Be</option>
-                  <option selected value="Not Attending">Not Attending</option>
+                  <option selected value="Not Attending">
+                    Not Attending
+                  </option>
                 </select>
               </span>
               <span>
-                <select value={this.state.value} onChange={event => this.handleCountChange(rsvp._id, event)}>
+                <select
+                  className="float2"
+                  value={this.state.value}
+                  onChange={event => this.handleCountChange(rsvp._id, event)}
+                >
                   <option value="default">{this.state.value}</option>
                   <option value="0">0</option>
-                  <option value="1" >1</option>
+                  <option value="1">1</option>
                   <option value="2">2</option>
-                  <option selected value="3">3</option>
+                  <option selected value="3">
+                    3
+                  </option>
                 </select>
               </span>
-
             </div>
           );
         })}

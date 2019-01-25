@@ -55,9 +55,15 @@ export default class Map extends React.Component {
 
     /* coordinates for location 2 */
 
-    L.marker([40.5409467, -74.49528750000002])
+    L.marker([40.5409467, -74.49528750000002], { icon: markerIcon })
       .addTo(this.map)
       .bindPopup("Ceremony Location.")
+      .openPopup();
+
+    /* 3rd location */
+    L.marker([40.5689887, -74.48933319999998], { icon: markerIcon })
+      .addTo(this.map)
+      .bindPopup("Rehersal Location.")
       .openPopup();
   }
 
