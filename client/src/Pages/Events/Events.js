@@ -7,6 +7,7 @@ import perfectImg from "../images/perfect.png";
 import { Container, Row, Col } from "reactstrap";
 import middleHeart from "../images/middleHeart.png";
 import time from "../images/time.png";
+import Moment from "react-moment";
 
 class Events extends Component {
   state = {
@@ -40,8 +41,8 @@ class Events extends Component {
           </p>
         </div>
         <Map />
-        <div className="eventlist">
-          {this.state.Events.map(event => {
+        <div className="eventlist row">
+          {this.state.Events.map((event, index) => {
             return (
               //   <div className="event" key={event._id}>
               //     <h3 className="heading">{event.eventName}</h3>
@@ -55,14 +56,32 @@ class Events extends Component {
               //   </div>
               // );
               // <Container />{" "}
-              <Row className="row2">
-                {" "}
-                <Col className="column " key={event._id} xs="3">
-                  <p className="titleCard2">{event.eventName}</p>{" "}
-                  <div className="small">{event.locationName}</div>{" "}
-                  <img className="time" src={time} alt="time" /> {event.date}
-                </Col>{" "}
-              </Row>
+              <React.Fragment>
+                <div className="row2 col-3">
+                  <Col className="column " key={event._id} xs="12">
+                    <p className="titleCard2">{event.eventName}</p>
+                    <div className="small">{event.locationName}</div>
+                    <img className="time" src={time} alt="time" />
+                    <Moment
+                      className="superSmall"
+                      format={"MM-DD-YYYY [at] hh:mm a"}
+                    >
+                      {event.date}
+                    </Moment>
+                    {/* // {event.date} */}
+                  </Col>
+                </div>
+
+                {index < 2 ? (
+                  <img
+                    src={middleHeart}
+                    className="middleHeartevent col-1"
+                    alt="heart"
+                  />
+                ) : (
+                  ""
+                )}
+              </React.Fragment>
             );
           })}
         </div>

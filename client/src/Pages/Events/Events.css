@@ -12,14 +12,25 @@
   width: 50px;
 }
 
+.middleHeartevent {
+  margin-top: 170px;
+  height: 80px;
+}
+
 .time {
   height: 20px;
   width: 20px;
-  font-size: 14px;
+  margin-top: 12px;
+  margin-right: 12px;
 }
 
 .row2 {
   text-align: center;
+  margin-bottom: 55px;
+}
+
+.superSmall {
+  font-size: 18px;
 }
 
 .titleCard2 {
@@ -44,4 +55,9 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-size: 40px;
   margin-top: 55px;
+  margin-bottom: 55px;
+}
+
+#root > div > div > div.eventlist.row > div:nth-child(1) > div {
+  margin-bottom: 60px;
 }
