@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import Menu from "./dropdown.js";
+import Names from "./Names";
 
 const styles = {
   villan: {
@@ -59,14 +60,6 @@ const Navbar = () => {
             </Link>
           </li>
 
-          {/* <li className="nav-item">
-            <Menu
-              text2="directions"
-              title="Events"
-              link1="/accomodations"
-              link2="/directions"
-            />
-          </li> */}
           <li className="nav-item">
             <Link
               to="/registry"
@@ -94,19 +87,7 @@ const Navbar = () => {
               Events
             </Link>
           </li>
-          <li className="nav-item">
-            <Link
-              to="/login"
-              className={
-                window.location.pathname === "/login"
-                  ? "nav-link active"
-                  : "nav-link"
-              }
-              style={styles.navLink}
-            >
-              Login
-            </Link>
-          </li>
+
           <li className="nav-item">
             <Link
               to="/photos"

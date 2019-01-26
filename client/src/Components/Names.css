@@ -1,8 +1,10 @@
-body{
+body {
   background-color: rgba(255, 255, 255, 0);
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
-.Jack, .and, .Jill{
+.Jack,
+.and,
+.Jill {
   width: 15%;
   padding: 1%;
   font-family: "Great Vibes", cursive;
@@ -18,15 +20,16 @@ body{
   -webkit-text-fill-color: transparent;
 }
 
-.Jill{
-left: 40%;
+.Jill {
+  left: 35%;
+  top: 125%;
 }
-.and{
-  left: 50%;
-  top: 9%;
+.and {
+  left: 46%;
+  top: 180%;
   font-size: 200%;
 }
-.Jack{
-  left: 42%;
-  top: 20%;
+.Jack {
+  left: 49%;
+  top: 173%;
 }

@@ -11,13 +11,12 @@ import Login from "./Pages/Login";
 import Photos from "./Pages/Photos";
 
 import GuestList from "./Pages/GuestList";
-import Names from "./Components/Names";
+// import Names from "./Components/Names";
 const App = () => {
   return (
     <Router>
       <div>
         <Navbar />
-        {/* <Names/> */}
         <Route exact path="/" component={Homepage} />
         <Route exact path="/about-couple" component={AboutCouple} />
         <Route exact path="/about-party" component={AboutParty} />

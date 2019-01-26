@@ -1,20 +1,20 @@
 .card {
   background: #fff;
   border-radius: 2px;
-  height: 150px;
+  height: 300px;
   margin: 1rem;
   position: relative;
-  width: 150px;
-  box-shadow: 0 3px 6px rgb(244, 28, 211), 0 3px 6px rgb(218, 34, 190);
+  width: 250px;
   text-align: left;
   display: inline-block;
+  border: double;
 }
 
 .card > .img-container {
   height: 100%;
   overflow: hidden;
   text-align: center;
-  background: rgb(227, 164, 227);
+  background: rgb(223, 223, 223);
 }
 
 .card > .img-container > img {
@@ -24,6 +24,5 @@
 }
 
 .img-thumbnail:hover {
-  background-color: purple;
   opacity: 0.5;
 }
