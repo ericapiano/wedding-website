@@ -107,6 +107,19 @@ const Navbar = () => {
               Login
             </Link>
           </li>
+          <li className="nav-item">
+            <Link
+              to="/photos"
+              className={
+                window.location.pathname === "/photos"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+              style={styles.navLink}
+            >
+              Photos
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

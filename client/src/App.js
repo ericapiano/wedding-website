@@ -8,8 +8,10 @@ import Homepage from "./Pages/Home";
 import RSVP from "./Pages/RSVP";
 import Events from "./Pages/Events";
 import Login from "./Pages/Login";
+import Photos from "./Pages/Photos";
+
 import GuestList from "./Pages/GuestList";
-import Names from "./Components/Names"
+import Names from "./Components/Names";
 const App = () => {
   return (
     <Router>
@@ -24,6 +26,8 @@ const App = () => {
         <Route exact path="/registry" component={Registry} />
         <Route exact path="/events" component={Events} />
         <Route exact path="/login" component={Login} />
+        <Route exact path="/photos" component={Photos} />
+
         {/* <Route exact path="/guestlist" component={GuestList} /> */}
       </div>
     </Router>

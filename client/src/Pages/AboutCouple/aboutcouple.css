@@ -1,7 +1,7 @@
 figure {
   border-radius: 50%;
 }
-.jumbotron{
+.jumbotron {
   padding-bottom: 0px;
 }
 .row2 {
@@ -11,6 +11,7 @@ figure {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-size: 40px;
   margin-top: 55px;
+  border: double;
 }
 
 .no-gutter {

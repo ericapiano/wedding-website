@@ -31,8 +31,9 @@
   width: 90%;
   margin: 5%;
   background-color: rgba(233, 236, 239, 0.6);
-  opacity: 0.6;
+  opacity: 0.9;
   border-radius: 5px;
+  border: double;
 }
 .rsvplist > h1 {
   text-align: center;
@@ -46,8 +47,10 @@
 .searchBtn {
   margin: 10px;
   opacity: 1;
-  background-color: rgba(0, 0, 225, 1);
+  background-color: rgb(89, 87, 87);
   color: white;
+  border: 2px solid black;
+  cursor: pointer;
 }
 
 .lastNameMargin {
@@ -56,12 +59,14 @@
 .float1 {
   float: right;
   border: 3px solid black;
+  cursor: pointer;
 }
 
 .float2 {
   float: right;
   border: 3px solid black;
   margin-right: 5px;
+  cursor: pointer;
 }
 
 .rsvp {

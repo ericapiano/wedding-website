@@ -44,18 +44,6 @@ class Events extends Component {
         <div className="eventlist row">
           {this.state.Events.map((event, index) => {
             return (
-              //   <div className="event" key={event._id}>
-              //     <h3 className="heading">{event.eventName}</h3>
-              //     <h5>{event.date}</h5>
-              //     <h5>{event.locationName}</h5>
-              // <img
-              //   className="middleHeart"
-              //   src={middleHeart}
-              //   alt="heart"
-              // />{" "}
-              //   </div>
-              // );
-              // <Container />{" "}
               <React.Fragment>
                 <div className="row2 col-3">
                   <Col className="column " key={event._id} xs="12">

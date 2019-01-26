@@ -42,6 +42,8 @@ class Homepage extends Component {
           </p>
           <p className="date">June 22, 2019</p>
           <Countdown className="counter" date={`${year}-06-20T00:00:00`} />
+          <br />
+          <br />
 
           {/* <p>Looking to meet your next best friend?</p> */}
         </div>
