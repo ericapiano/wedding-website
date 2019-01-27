@@ -4,7 +4,7 @@
   height: 300px;
   margin: 1rem;
   position: relative;
-  width: 250px;
+  width: 320px;
   text-align: left;
   display: inline-block;
   border: double;
@@ -25,4 +25,60 @@
 
 .img-thumbnail:hover {
   opacity: 0.5;
+}
+
+.modal-body {
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 4rem;
+}
+
+.modal {
+  height: 50vw;
+  width: 50vw;
+  min-width: 300px;
+  min-height: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: transparent;
+  transform: translate(-50%, -50%);
+  /* background-color: rgba(144, 142, 142, 0.7); */
+  /* border: double; */
+  margin-top: 40px;
+}
+
+.modal-body img {
+  height: 455px;
+  width: 468px;
+  border: white;
+}
+
+body > div:nth-child(7) > div > div.modal.fade.show > div > div {
+  height: 100%;
+  margin-top: 40px;
+}
+
+.innerImg {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.modal-header {
+  padding: none !important;
+  border-bottom: none !important;
+}
+
+.photoContainer {
+  margin-right: auto;
+  margin-right: auto;
+}
+
+.modal-content {
+  background-color: rgb(182, 179, 179);
+  border: double;
+}
+
+.close {
+  color: white !important;
 }

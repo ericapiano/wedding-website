@@ -89,7 +89,7 @@ class Rsvp extends Component {
           // style={styles.jumbotron}
           // style={styles.cursive}
         >
-          <h1 className="display-4">Respond Sil Vous Plait</h1>
+          <h1 className="display-4">Répondez S'il Vous Plaît</h1>
           <p>
             <img src={perfectImg} alt="heart" />
           </p>

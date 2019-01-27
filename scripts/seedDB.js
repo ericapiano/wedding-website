@@ -3,10 +3,7 @@ const db = require("../models");
 
 // mongoose.connect("mongodb://localhost/weeee", { useNewUrlParser: true });
 
-mongoose.connect(
-  process.env.MONGODB_URI ||
-  "mongodb://localhost/weeee"
-);
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/weeee");
 
 const rsvpListSeed = [
   {
@@ -14,15 +11,14 @@ const rsvpListSeed = [
     lastName: "Phalak",
     status: "Attending",
     date: new Date(Date.now()),
-    peopleCount: 4,
+    peopleCount: 4
   },
   {
     firstName: "Shivani",
     lastName: "Choudhary",
     status: "May be",
     date: new Date(Date.now()),
-    peopleCount: 2,
-
+    peopleCount: 2
   },
   {
     firstName: "Bhagyashree",
@@ -31,7 +27,7 @@ const rsvpListSeed = [
     date: new Date(Date.now()),
     peopleCount: 1
   }
-]
+];
 const eventListSeed = [
   {
     eventName: "Bridal Shower",
@@ -39,31 +35,37 @@ const eventListSeed = [
     locationName: "Akbar Palace"
   },
   {
-    eventName: "Sangeet",
+    eventName: "Ceremony",
     date: "JUNE 22 2019",
     locationName: " Palace"
-  },{
-    eventName: "Wedding",
-    date: "November 1 2019",
-    locationName: "legacy castle"
   },
-]
+  {
+    eventName: "Reception",
+    date: "June 22, 2019",
+    locationName: "legacy castle"
+  }
+];
 const registryListSeed = [
   {
     storeName: "Bed Bath Beyond",
-    text: "Search for our names on the site or print our registry in the store.",
-    locationName: "https://www.bedbathandbeyond.com/store/giftregistry/registry-search-guest?icid=quicklinks_one"
+    text:
+      "Search for our names on the site or print our registry in the store.",
+    locationName:
+      "https://www.bedbathandbeyond.com/store/giftregistry/registry-search-guest?icid=quicklinks_one"
   },
   {
     storeName: "Target",
-    text: "Search for our names on the site or print our registry in the store.",
+    text:
+      "Search for our names on the site or print our registry in the store.",
     locationName: "https://www.target.com/gift-registry/"
-  },{
-    storeName: "Marshalls",
-    text: "Search for our names on the site or print our registry in the store.",
-    locationName: "Not yet done"
   },
-]
+  {
+    storeName: "Marshalls",
+    text:
+      "Search for our names on the site or print our registry in the store.",
+    locationName: "Not yet done"
+  }
+];
 const userSeed = [
   {
     userName: "jack",
@@ -77,10 +79,9 @@ const userSeed = [
     userName: "test",
     password: "testing"
   }
-]
+];
 
-  db.USER
-  .remove({})
+db.USER.remove({})
   .then(() => db.USER.collection.insertMany(userSeed))
   .then(data => {
     console.log(data.length + " user records inserted!");
@@ -88,9 +89,8 @@ const userSeed = [
   .catch(err => {
     console.error(err);
   });
-  
-  db.EVENT
-  .remove({})
+
+db.EVENT.remove({})
   .then(() => db.EVENT.collection.insertMany(eventListSeed))
   .then(data => {
     console.log(data.length + " records inserted!");
@@ -99,8 +99,7 @@ const userSeed = [
     console.error(err);
   });
 
-  db.RSVP
-  .remove({})
+db.RSVP.remove({})
   .then(() => db.RSVP.collection.insertMany(rsvpListSeed))
   .then(data => {
     console.log(data.length + " records inserted!");
@@ -109,8 +108,7 @@ const userSeed = [
     console.error(err);
   });
 
-  db.REGISTRY
-  .remove({})
+db.REGISTRY.remove({})
   .then(() => db.REGISTRY.collection.insertMany(registryListSeed))
   .then(data => {
     console.log(data.length + " records inserted!");

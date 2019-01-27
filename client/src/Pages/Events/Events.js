@@ -52,7 +52,9 @@ class Events extends Component {
                     <img className="time" src={time} alt="time" />
                     <Moment
                       className="superSmall"
-                      format={"MM-DD-YYYY [at] hh:mm a"}
+                      format={"MM-DD-YYYY"}
+
+                      // format={"MM-DD-YYYY [at] hh:mm a"}
                     >
                       {event.date}
                     </Moment>

@@ -35,9 +35,11 @@ class ModalExample extends React.Component {
           toggle={this.toggle}
           className={this.props.className}
         >
-          <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
-          <ModalBody>{this.state.imageName}</ModalBody>
-          <ModalFooter />
+          <ModalHeader toggle={this.toggle} />
+          <ModalBody>
+            {/* {this.state.image} */}
+            <img className="innerImg" src={this.props.imageName} />
+          </ModalBody>
         </Modal>
       </div>
     );
