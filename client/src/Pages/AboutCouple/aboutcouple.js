@@ -36,20 +36,12 @@ class AboutCouple extends Component {
             <Container />
             <Row className="row2">
               <Col className="column bioPicContainer" xs="6">
-                <img
-                  className="bioPic left"
-                  src="https://image.shutterstock.com/mosaic_250/2967241/657764164/stock-photo-portrait-of-beautiful-redhead-girl-smiling-looking-at-camera-657764164.jpg"
-                  alt="Bride"
-                />
+                <img className="bioPic left" src="liv.jpg" alt="Bride" />
                 <p className="titleCard">Bride</p>
               </Col>
               <Col className="column bioPicContainer" xs="6">
                 <figure className="bioPic right">
-                  <img
-                    className="bioPic"
-                    src="https://media.istockphoto.com/photos/happy-laughing-man-picture-id544358212?k=6&m=544358212&s=612x612&w=0&h=odURMNz2hty8LIfpVahaaUKpGU4vd-UlZx4jy-OAnJA="
-                    alt="Groom"
-                  />
+                  <img className="bioPic" src="zach.jpg" alt="Groom" />
                 </figure>
 
                 <p className="titleCard">Groom</p>
