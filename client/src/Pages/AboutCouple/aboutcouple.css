@@ -57,6 +57,13 @@ figure {
   font-size: 16px;
   margin-right: 25px;
   margin-left: 25px;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 600;
+  border: double;
+  background-color: white;
+  opacity: 0.8;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* sets speed that the pictures move onto the screen */

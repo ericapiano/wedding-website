@@ -50,6 +50,15 @@ class Homepage extends Component {
         <div className="container my-5">
           <div className="row">
             <div className="col-12">
+              <iframe
+                className="video"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/7OF4sO5chQ4"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              />
               {/* <p>Looking to meet your next best friend?</p> */}
             </div>
           </div>

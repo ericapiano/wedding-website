@@ -48,9 +48,9 @@ export default class Map extends React.Component {
     /* convert a street address to its coordinates using https://www.gps-coordinates.net/ */
     /* coordinates for location 1 */
 
-    L.marker([40.5308709, -74.53405220000002], { icon: markerIcon })
+    L.marker([40.53473899999999, -74.5057698], { icon: markerIcon })
       .addTo(this.map)
-      .bindPopup("Reception Location.")
+      .bindPopup("Bridal Shower Location.")
       .openPopup();
 
     /* coordinates for location 2 */
@@ -61,9 +61,9 @@ export default class Map extends React.Component {
       .openPopup();
 
     /* 3rd location */
-    L.marker([40.5689887, -74.48933319999998], { icon: markerIcon })
+    L.marker([40.5676865, -74.5485481], { icon: markerIcon })
       .addTo(this.map)
-      .bindPopup("Rehersal Location.")
+      .bindPopup("Reception Location.")
       .openPopup();
   }
 

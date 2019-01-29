@@ -1,5 +1,6 @@
 .small {
-  font-size: 25px;
+  font-size: 35px;
+  font-family: "Great Vibes", cursive;
 }
 
 .col-4 {
@@ -20,10 +21,16 @@
 .time {
   height: 20px;
   width: 20px;
-  margin-top: 12px;
+  margin-top: 6px;
   margin-right: 12px;
 }
 
+.address {
+  color: black;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+}
 .row2 {
   text-align: center;
   margin-bottom: 55px;
@@ -31,6 +38,7 @@
 
 .superSmall {
   font-size: 18px;
+  font-family: "Libre Baskerville", serif;
 }
 
 .titleCard2 {
@@ -57,9 +65,38 @@
   margin-top: 55px;
   margin-bottom: 55px;
   padding-left: 30px;
+  border: double;
   padding-right: 30px;
 }
 
 #root > div > div > div.eventlist.row > div:nth-child(1) > div {
   margin-bottom: 60px;
+}
+
+.form {
+  height: 40px;
+  font-size: 20px;
+  font-family: none;
+  margin-top: 20px;
+}
+.form2 {
+  cursor: pointer;
+  border: 2px solid black;
+
+  /* position: absolute; */
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(144, 138, 138);
+  color: white;
+  font-family: "Libre Baskerville", serif;
+}
+
+.form2:hover {
+  color: white;
+  background: rgb(109, 108, 108);
+  font-size: 25px;
+}
+
+.eventCard {
 }
