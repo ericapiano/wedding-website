@@ -37,6 +37,7 @@ class Photos extends Component {
             modalIsOpen={this.state.modalIsOpen}
           />
           {photoData.map(photo => {
+            console.log(photo);
             return (
               <div className="card">
                 <div className="img-container">

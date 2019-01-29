@@ -71,8 +71,9 @@ body > div:nth-child(7) > div > div.modal.fade.show > div > div {
 }
 
 .photoContainer {
-  margin-right: auto;
-  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .modal-content {
@@ -82,4 +83,10 @@ body > div:nth-child(7) > div > div.modal.fade.show > div > div {
 
 .close {
   color: white !important;
+}
+@media (max-width: 700px) {
+  .card {
+    width: 90vw;
+    height: 90vw;
+  }
 }

@@ -47,9 +47,9 @@ class Events extends Component {
           {this.state.Events.map((event, index) => {
             return (
               <React.Fragment>
-                <div className=" col-sm-12 col-md-3">
+                <div className="eventCards col-sm-6 col-xs-12 col-lg-4">
                   <div className="row2">
-                    <Col className="column " key={event._id} xs="12">
+                    <Col className="column column12 " key={event._id} xs="12">
                       <p className="titleCard2">{event.eventName}</p>
                       <div className="small">{event.locationName}</div>
 
@@ -83,7 +83,7 @@ class Events extends Component {
                   </div>
                 </div>
 
-                {index < 2 ? (
+                {/* {index < 2 ? (
                   <img
                     src={middleHeart}
                     className="middleHeartevent col-1"
@@ -91,7 +91,7 @@ class Events extends Component {
                   />
                 ) : (
                   ""
-                )}
+                )} */}
               </React.Fragment>
             );
           })}
