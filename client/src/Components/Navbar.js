@@ -101,6 +101,20 @@ const Navbar = () => {
               Photos
             </Link>
           </li>
+
+          <li className="nav-item">
+            <Link
+              to="/login"
+              className={
+                window.location.pathname === "/login"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+              style={styles.navLink}
+            >
+              Login
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
