@@ -7,12 +7,12 @@ router
   .route('/login')
   .post(passport.authenticate('local'), function(req, res) {
     // Log in and send back user information
-    console.log(req.user);
+    // console.log(req.user);
     res.json(req.user);
   })
   .get(function(req, res) {
     // Check to see if user is logged in
-    console.log(req.user);
+    // console.log(req.user);
     if (req.user) {
       // If logged in, send back this flag and the username itself
       // NOTE: you can send back whatever you want here
@@ -29,7 +29,7 @@ router
   .get(function(req,res) {
     // Log user out
     req.logout()
-    console.log(req.user);
+    // console.log(req.user);
     res.json(false);
   })
 

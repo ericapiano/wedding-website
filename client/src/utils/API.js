@@ -2,11 +2,11 @@ import axios from 'axios';
 
 export default {
   getAllEvents: function() {
-    console.log("getting events with axios");
+    // console.log("getting events with axios");
     return axios.get('/api/events/')
   },
   getAllRsvp: function() {
-    console.log("getting rsvp with axios");
+    // console.log("getting rsvp with axios");
     return axios.get('/api/rsvp/')
   },
   updateStatusRsvp: function(guestId , obj){
@@ -17,7 +17,12 @@ export default {
     // console.log("updating rsvp 11111");
     return axios.put(`/api/rsvp/${guestId}`,obj) 
   },
-  
+  createNewGuest: function(obj){
+    return axios.post(`/api/rsvp/newGuest/`,obj)
+  },
+  createNewEvent: function(obj){
+    return axios.post(`/api/events/newEvent/`,obj)
+  },
 // =============login routes===========
   /* 
     loginCreds = {username: "alex", "password": 12345Password!}
@@ -38,7 +43,7 @@ export default {
     return axios.get('/api/logout')
   },
   register: function(loginCreds){
-    console.log("registering new user")
+    // console.log("registering new user")
     return axios.post('/api/user/register', loginCreds)
   }
   }

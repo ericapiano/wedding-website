@@ -1,3 +1,8 @@
 .cursor-style{
   cursor:pointer;
 }
+.row-style{
+  background-color:#e9ecef;
+  opacity: .6;
+  border-radius: 5px;
+}

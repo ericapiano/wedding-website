@@ -15,15 +15,15 @@ class Events extends Component {
   };
   componentDidMount() {
     this.getEvents();
-    console.log("getevents triggerred here");
+    // console.log("getevents triggerred here");
   }
 
   getEvents = () => {
     API.getAllEvents()
       .then(({ data }) => {
         this.setState({ Events: data });
-        console.log("working till here");
-        console.log(this.state);
+        // console.log("working till here");
+        // console.log(this.state);
       })
       .catch(err => console.log(err));
   };
@@ -44,18 +44,7 @@ class Events extends Component {
         <div className="eventlist row">
           {this.state.Events.map((event, index) => {
             return (
-              //   <div className="event" key={event._id}>
-              //     <h3 className="heading">{event.eventName}</h3>
-              //     <h5>{event.date}</h5>
-              //     <h5>{event.locationName}</h5>
-              // <img
-              //   className="middleHeart"
-              //   src={middleHeart}
-              //   alt="heart"
-              // />{" "}
-              //   </div>
-              // );
-              // <Container />{" "}
+             
               <React.Fragment>
                 <div className="row2 col-3">
                   <Col className="column " key={event._id} xs="12">

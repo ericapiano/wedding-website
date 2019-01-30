@@ -36,16 +36,24 @@ const eventListSeed = [
   {
     eventName: "Bridal Shower",
     date: "JUNE 17 2019",
-    locationName: "Akbar Palace"
+    locationName: "Akbar Palace",
+    address: "21 Cortlandt St Suite 1, Edison, NJ 08837"
   },
   {
     eventName: "Sangeet",
     date: "JUNE 22 2019",
-    locationName: " Palace"
-  },{
+    locationName: "Akbar Palace",
+    address: "21 Cortlandt St Suite 1, Edison, NJ 08837"
+  }, {
     eventName: "Wedding",
     date: "November 1 2019",
-    locationName: "legacy castle"
+    locationName: "legacy castle",
+    address: "141 NJ-23, Pompton Plains, NJ 07444"
+  }, {
+    eventName: "Reception",
+    date: "November 1 2019",
+    locationName: "legacy castle",
+    address: "141 NJ-23, Pompton Plains, NJ 07444"
   },
 ]
 const registryListSeed = [
@@ -58,7 +66,7 @@ const registryListSeed = [
     storeName: "Target",
     text: "Search for our names on the site or print our registry in the store.",
     locationName: "https://www.target.com/gift-registry/"
-  },{
+  }, {
     storeName: "Marshalls",
     text: "Search for our names on the site or print our registry in the store.",
     locationName: "Not yet done"
@@ -79,41 +87,41 @@ const userSeed = [
   }
 ]
 
-  db.USER
+db.USER
   .remove({})
   .then(() => db.USER.collection.insertMany(userSeed))
   .then(data => {
-    console.log(data.length + " user records inserted!");
+    // console.log(data.length + " user records inserted!");
   })
   .catch(err => {
     console.error(err);
   });
-  
-  db.EVENT
+
+db.EVENT
   .remove({})
   .then(() => db.EVENT.collection.insertMany(eventListSeed))
   .then(data => {
-    console.log(data.length + " records inserted!");
+    // console.log(data.length + " records inserted!");
   })
   .catch(err => {
     console.error(err);
   });
 
-  db.RSVP
+db.RSVP
   .remove({})
   .then(() => db.RSVP.collection.insertMany(rsvpListSeed))
   .then(data => {
-    console.log(data.length + " records inserted!");
+    // console.log(data.length + " records inserted!");
   })
   .catch(err => {
     console.error(err);
   });
 
-  db.REGISTRY
+db.REGISTRY
   .remove({})
   .then(() => db.REGISTRY.collection.insertMany(registryListSeed))
   .then(data => {
-    console.log(data.length + " records inserted!");
+    // console.log(data.length + " records inserted!");
   })
   .catch(err => {
     console.error(err);

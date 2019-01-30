@@ -3,10 +3,17 @@ ul {
   margin: auto;
 }
 
-#navbarNav {
+/* #navbarNav {
   text-align: center;
+} */
+.ff{
+  display: flex;
+  flex-direction: row;
+  
 }
-
+.hide{
+  width: 100%;
+}
 li {
   display: inline;
   margin-right: 10px;

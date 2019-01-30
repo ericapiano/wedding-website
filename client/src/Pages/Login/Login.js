@@ -1,60 +1,4 @@
-// import React, { Component } from "react";
-// import "./Login.css"
-// import API from '../../utils/API';
 
-
-// class Login extends Component {
-//   state = {
-//     userName:"",
-//     password:""
-//   }
-// // on changing state
-// handleChange = event => {
-//   const {name, value} = event.target;
-//   this.setState({[name]: value});
-// }
-
-// //  on submit 
-//   handleSubmit = event => {
-//     event.preventDefault();
-// // if empty returns false
-//     if (!this.state.userName || !this.state.password) {
-//       return false;
-//     }
-//     // console.log("creds: "+ this.state.password+ this.state.userName)
-//     API
-//     .postCredentials({
-//       userName: this.state.userName,
-//       password: this.state.password
-//     })
-//       .then(res => {
-//         console.log(res.data);
-//         this.setState({isLoggedIn: res.data})
-
-//       })
-//       .catch(err => console.log(err.response));
-//   }
-
-//   render() {
-//     return (
-//       <div className="back">
-//         <div className="form ">
-//           <form action="submit" className="login">
-//             name
-//           <input name="userName" type="text" onChange={this.handleChange} />
-
-//             password
-//           <input name="password" type="text" onChange={this.handleChange} />
-
-//             <button type="submit" onClick={this.handleSubmit}>submit</button>
-//           </form>
-//         </div>
-//       </div>
-//     )
-//   }
-// }
-
-// export default Login;
 
 // ===============================
 // 
@@ -84,8 +28,8 @@ class Login extends Component {
     API
       .login({username: this.state.username, password: this.state.password})
       .then(res => {
-        console.log(res.data);
-        console.log("logged in")
+        // console.log(res.data);
+        // console.log("logged in")
         this.setState({isLoggedIn: res.data})
 
       })
@@ -96,8 +40,8 @@ class Login extends Component {
     
     API.register({username: this.state.username, password: this.state.password})
     .then(res => {
-      console.log(res.data);
-      console.log("registered successfully")
+      // console.log(res.data);
+      // console.log("registered successfully")
 
     })
 

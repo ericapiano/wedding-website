@@ -35,17 +35,7 @@ class Rsvp extends Component {
       this.setState({ FilterGuests: [] });
     }
   };
-  // let user edit their rsvp
-  // handleEdit = (guestId, status, peopleCount) => {
-  //   var details = {
-  //     status: status,
-  //     peopleCount: peopleCount
-  //   }
-  //   // console.log(guestId, status, peopleCount)
-  //   API.updateRsvp(guestId)
-  //     .then(this.state.Rsvp)
 
-  // }
   // let user change their status
   handleStatusChange = (rsvpId, event) => {
     // create copy of state
@@ -53,9 +43,9 @@ class Rsvp extends Component {
     this.setState({ status: event.target.value });
     //iterate through array to check id  ;
     for (var i = 0; i < rsvp.length; i++) {
-      console.log(rsvp[i]);
+      // console.log(rsvp[i]);
       if (rsvp[i]._id === rsvpId) {
-        console.log("matched");
+        // console.log("matched");
         rsvp[i].status = event.target.value;
         API.updateStatusRsvp(rsvpId, rsvp[i]);
       }
@@ -69,9 +59,9 @@ class Rsvp extends Component {
     this.setState({ value: event.target.value });
     //iterate through array to check id  ;
     for (var i = 0; i < rsvp.length; i++) {
-      console.log(rsvp[i]);
+      // console.log(rsvp[i]);
       if (rsvp[i]._id === rsvpId) {
-        console.log("matched");
+        // console.log("matched");
         rsvp[i].peopleCount = event.target.value;
         API.updateCountRsvp(rsvpId, rsvp[i]);
       }
