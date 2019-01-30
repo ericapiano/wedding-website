@@ -79,12 +79,14 @@ body > div:nth-child(7) > div > div.modal.fade.show > div > div {
 .modal-content {
   background-color: rgb(182, 179, 179);
   border: double;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .modal-title {
   font-size: 50px;
   font-family: "Great Vibes", cursive;
+  width: 100%;
+  text-align: center;
 }
 
 .close {
