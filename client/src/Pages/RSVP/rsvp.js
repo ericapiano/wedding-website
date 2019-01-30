@@ -72,7 +72,7 @@ class Rsvp extends Component {
   render() {
     return (
       <div className="rsvplist">
-        <h1>RSVP</h1>
+        {/* <h1>RSVP</h1> */}
         <input
           className="search"
           placeholder="search for your name..."

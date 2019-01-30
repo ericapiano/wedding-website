@@ -9,6 +9,7 @@ const passport = require("passport");
 const app = express();
 const path = require("path");
 const LocalStrategy = require("passport-local").Strategy;
+const stripe = require('stripe')('sk_test_qOY8OS6iqUFldbzIJZHy9zbN');
 const PORT = process.env.PORT || 3001; //has to be 3001 as react app uses 3000
 
 require('dotenv').config();
@@ -30,6 +31,13 @@ app.use(routes);
 
 const User = require("./models/user");
 
+// const charge = await stripe.charges.create({
+//   amount: 2000,
+//   currency: 'usd',
+//   source: 'tok_mastercard',
+//   description: 'My first payment'
+// });
+
 passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
@@ -40,13 +48,6 @@ passport.deserializeUser(User.deserializeUser());
 app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
-
-
-
-
-
-
-
 // Connect to the Mongo DB
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost:27017/weeee",
