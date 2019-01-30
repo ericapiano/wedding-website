@@ -11,7 +11,7 @@ figure {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-size: 40px;
   margin-top: 55px;
-  border: double;
+  /* border: double; */
 }
 
 .no-gutter {
@@ -59,7 +59,7 @@ figure {
   margin-left: 25px;
   font-family: "Libre Baskerville", serif;
   font-weight: 600;
-  border: double;
+  /* border: double; */
   background-color: white;
   opacity: 0.8;
   padding-top: 30px;

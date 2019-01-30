@@ -12,11 +12,10 @@
 .hide {
   direction: none;
 }
-.container{
-  /* border-radius: 15px; */
+/* .container{
   width: 50%;
   
-}
+} */
 .bells {
   height: 50px;
   width: 50px;
@@ -24,7 +23,7 @@
 
 .loginBox {
   height: 80%;
-  width: 60%;
+  width: 50%;
   padding-top: 60px;
   padding-bottom: 60px;
   margin-left: auto;
@@ -32,6 +31,6 @@
   background-color: #e9ecef;
   border-radius: 5px;
   margin-top: 150pxpx;
-  border: double;
+  /* border: double; */
   opacity: 0.9;
 } 

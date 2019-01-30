@@ -7,7 +7,7 @@
   width: 320px;
   text-align: left;
   display: inline-block;
-  border: double;
+  /* border: double; */
 }
 
 .card > .img-container {
@@ -78,7 +78,7 @@ body > div:nth-child(7) > div > div.modal.fade.show > div > div {
 
 .modal-content {
   background-color: rgb(182, 179, 179);
-  border: double;
+  /* border: double; */
   align-items: center;
 }
 

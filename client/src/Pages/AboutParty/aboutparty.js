@@ -26,10 +26,10 @@ class AboutParty extends Component {
 
         <div>
           <Container />
-          <Row className="row">
+          <Row className="row mx-5 mb-5 mt-2 main">
             <Col xs="6" className="bride-container">
               <p>
-                <img className="weddingParty" src={bride} alt="bride" />
+                <img className="weddingParty mt-4" src={bride} alt="bride" />
               </p>
               <div className="flip-box">
                 <div className="flip-box-inner">
@@ -72,7 +72,7 @@ class AboutParty extends Component {
             </Col>
             <Col xs="6" className="groom">
               <p>
-                <img className="weddingParty" src={groom} alt="groom" />
+                <img className="weddingParty mt-4" src={groom} alt="groom" />
               </p>
               <div className="flip-box">
                 <div className="flip-box-inner">
