@@ -67,6 +67,7 @@ body > div:nth-child(7) > div > div.modal.fade.show > div > div {
 
 .modal-header {
   padding: none !important;
+  width: 100%;
   border-bottom: none !important;
 }
 
