@@ -29,7 +29,7 @@ class Photos extends Component {
         >
           <h1 className="display-4">Gallery</h1>
           <p>
-            <img src={perfectImg} alt="heart" />
+            <img id="img" src={perfectImg} alt="heart" />
           </p>
         </div>
         <span className="photoContainer">

@@ -15,7 +15,11 @@ body:after {
 }
 .heart {
   left: 26%;
-  top: 5%;  
+  top: 5%;
+}
+
+.col-homepage {
+  margin-top: 27px;
 }
 
 .display-4 {

@@ -20,11 +20,11 @@ class Homepage extends Component {
           // style={styles.jumbotron}
           // style={styles.cursive}
         >
-          <br />
-          <p>Jack & Jill</p>
+          <h1 className="display-4">Jack & Jill </h1>
           <p>
-            <img className="heart" src={perfectImg} alt="heart" />
+            <img id="img" src={perfectImg} alt="heart" />
           </p>
+
           <p className="date">June 22, 2019</p>
           <Countdown className="counter" date={`${year}-06-20T00:00:00`} />
           <br />
@@ -34,7 +34,7 @@ class Homepage extends Component {
         </div>
         <div className="container my-5">
           <div className="row">
-            <div className="col-12">
+            <div className="col-12 col-homepage">
               <iframe
                 className="video"
                 width="560"
@@ -44,7 +44,6 @@ class Homepage extends Component {
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
               />
-              {/* <p>Looking to meet your next best friend?</p> */}
             </div>
           </div>
         </div>

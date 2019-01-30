@@ -81,7 +81,7 @@ class Rsvp extends Component {
         >
           <h1 className="display-4">R.S.V.P.</h1>
           <p>
-            <img src={perfectImg} alt="heart" />
+            <img id="img" src={perfectImg} alt="heart" />
           </p>
         </div>
 

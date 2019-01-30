@@ -64,7 +64,7 @@ class Login extends Component {
           <form>
             {/* <img className="bells" src={bells} alt="bells" /> */}
 
-            <h3 className="login">Login!</h3>
+            <h3 className="login">Login</h3>
             <div className="form-group">
               <label className="username" htmlFor="username">
                 Username:

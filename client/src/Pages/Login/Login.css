@@ -38,6 +38,7 @@
 .login {
   font-family: "Great Vibes", cursive;
   font-size: 50px;
+  text-align: center;
 }
 
 .username {
@@ -64,4 +65,71 @@
   background-color: rgb(144, 138, 138);
   color: white;
   font-family: "Libre Baskerville", serif;
+}
+
+.loginbtn:hover {
+  color: white;
+  background: rgb(109, 108, 108);
+  font-size: 20px;
+  border: black;
+}
+
+@media (max-width: 759px) {
+  form {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 750px) {
+  .innerImg {
+    height: 200px !important;
+    width: 200px !important;
+  }
+
+  .modal-body {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+}
+
+@media (max-width: 750px) {
+  #img {
+    width: 450px !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .bioPic {
+    min-width: 150px !important;
+    min-height: 150px !important;
+  }
+}
+
+@media (max-width: 650px) {
+  #img {
+    width: 350px !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .fJsfAj {
+    width: 800px;
+  }
+}
+
+@media (max-width: 800px) {
+  .fJsfAj {
+    width: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  .fJsfAj {
+    width: 300px;
+  }
+}
+
+.bioPic.left {
+  margin-bottom: 17px;
 }

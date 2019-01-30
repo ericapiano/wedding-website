@@ -39,14 +39,13 @@ class Events extends Component {
         >
           <h1 className="display-4">Celebrate with us</h1>
           <p>
-            <img src={perfectImg} alt="heart" />
+            <img id="img" src={perfectImg} alt="heart" />
           </p>
         </div>
         <Map />
         <div className="eventlist row">
           {this.state.Events.map((event, index) => {
             return (
-             
               <React.Fragment>
                 <div className="eventCards col-sm-6 col-xs-12 col-lg-4">
                   <div className="row2">

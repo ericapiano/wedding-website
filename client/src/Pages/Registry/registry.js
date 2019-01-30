@@ -37,7 +37,7 @@ class Registry extends Component {
           {/* <p>Looking to meet your next best friend?</p> */}
 
           <p>
-            <img src={perfectImg} alt="heart" />
+            <img id="img" src={perfectImg} alt="heart" />
           </p>
         </div>
         <br />

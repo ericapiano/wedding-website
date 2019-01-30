@@ -20,7 +20,7 @@ class AboutParty extends Component {
           <h1 className="display-4">We couldn't do it without you</h1>
 
           <p>
-            <img src={perfectImg} alt="heart" />
+            <img id="img" src={perfectImg} alt="heart" />
           </p>
         </div>
 
