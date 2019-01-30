@@ -6,7 +6,9 @@ import "./Events.css";
 import perfectImg from "../images/perfect.png";
 import { Container, Row, Col } from "reactstrap";
 import middleHeart from "../images/middleHeart.png";
-import time from "../images/time.png";
+// import clock from "../images/clock.png";
+import calendar from "../images/calendar.png";
+import local from "../images/local.png";
 import Moment from "react-moment";
 
 class Events extends Component {
@@ -46,22 +48,43 @@ class Events extends Component {
             return (
              
               <React.Fragment>
-                <div className="row2 col-3">
-                  <Col className="column " key={event._id} xs="12">
-                    <p className="titleCard2">{event.eventName}</p>
-                    <div className="small">{event.locationName}</div>
-                    <img className="time" src={time} alt="time" />
-                    <Moment
-                      className="superSmall"
-                      format={"MM-DD-YYYY [at] hh:mm a"}
-                    >
-                      {event.date}
-                    </Moment>
-                    {/* // {event.date} */}
-                  </Col>
+                <div className="eventCards col-sm-6 col-xs-12 col-lg-4">
+                  <div className="row2">
+                    <Col className="column column12 " key={event._id} xs="12">
+                      <p className="titleCard2">{event.eventName}</p>
+                      <div className="small">{event.locationName}</div>
+
+                      <img className="time" src={calendar} alt="time" />
+                      <Moment className="superSmall" format={"MM/DD/YYYY"}>
+                        {event.date}
+                      </Moment>
+
+                      <p className="address">{event.address}</p>
+
+                      <form
+                        className="form"
+                        action="http://maps.google.com/maps"
+                        method="get"
+                        target="_blank"
+                      >
+                        <input
+                          className="form"
+                          type="hidden"
+                          name="daddr"
+                          value={event.address}
+                        />
+                        <input
+                          className="form2"
+                          type="submit"
+                          value="Get directions"
+                        />
+                      </form>
+                      {/* // {event.date} */}
+                    </Col>
+                  </div>
                 </div>
 
-                {index < 2 ? (
+                {/* {index < 2 ? (
                   <img
                     src={middleHeart}
                     className="middleHeartevent col-1"
@@ -69,7 +92,7 @@ class Events extends Component {
                   />
                 ) : (
                   ""
-                )}
+                )} */}
               </React.Fragment>
             );
           })}

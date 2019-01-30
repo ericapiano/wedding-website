@@ -16,7 +16,7 @@ ul {
 }
 li {
   display: inline;
-  margin-right: 10px;
+  margin-right: 50px;
 }
 
 a {
@@ -35,8 +35,8 @@ a {
 }
 
 .navbar-nav {
-  /* border-bottom: 3px solid black; */
-  /* border-top: 1px solid black; */
+  border-bottom: 3px solid black;
+  border-top: 1px solid black;
 }
 
 .navbar {

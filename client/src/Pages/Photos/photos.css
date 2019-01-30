@@ -1,0 +1,98 @@
+.card {
+  background: #fff;
+  border-radius: 2px;
+  height: 300px;
+  margin: 1rem;
+  position: relative;
+  width: 320px;
+  text-align: left;
+  display: inline-block;
+  border: double;
+}
+
+.card > .img-container {
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+  background: rgb(223, 223, 223);
+}
+
+.card > .img-container > img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.img-thumbnail:hover {
+  opacity: 0.5;
+}
+
+.modal-body {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 3% !important;
+  margin-bottom: 40px;
+}
+
+.modal {
+  height: 50vw;
+  width: 50vw;
+  min-width: 300px;
+  min-height: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: transparent;
+  transform: translate(-50%, -50%);
+  /* background-color: rgba(144, 142, 142, 0.7); */
+  /* border: double; */
+  margin-top: 40px;
+}
+
+.modal-body img {
+  height: 455px;
+  width: 468px;
+  border: white;
+}
+
+body > div:nth-child(7) > div > div.modal.fade.show > div > div {
+  height: 100%;
+  margin-top: 40px;
+}
+
+.innerImg {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.modal-header {
+  padding: none !important;
+  border-bottom: none !important;
+}
+
+.photoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.modal-content {
+  background-color: rgb(182, 179, 179);
+  border: double;
+  align-items: center;
+}
+
+.modal-title {
+  font-size: 50px;
+  font-family: "Great Vibes", cursive;
+}
+
+.close {
+  color: white !important;
+}
+@media (max-width: 700px) {
+  .card {
+    width: 90vw;
+    height: 90vw;
+  }
+}

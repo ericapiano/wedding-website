@@ -1,7 +1,7 @@
 # wedding-website
 
-A customizable wedding website for couples to manage their
-registry, guest list, and venue locations. Those invited can use website to RSVP with attendance status and headcount, browse registry, get directions to wedding events and read about the couple and bridal party.
+A personalized wedding website for couples to manage their
+registry, guest list, and venue locations. Those invited can use website to RSVP with attendance status and headcount, browse registry, get directions to wedding events and read about the couple and bridal party. The couple will be notified via email of each response recorded.
 
 ## Tech Used
 
@@ -18,5 +18,9 @@ registry, guest list, and venue locations. Those invited can use website to RSVP
 -Styled-components
 -passport.js
 -react-moment
+-google maps
+-nodemailer
 
 ## Demo Link
+
+https://blooming-coast-33034.herokuapp.com/

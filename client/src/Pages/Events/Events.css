@@ -1,5 +1,6 @@
 .small {
-  font-size: 25px;
+  font-size: 35px;
+  font-family: "Great Vibes", cursive;
 }
 
 .col-4 {
@@ -20,10 +21,16 @@
 .time {
   height: 20px;
   width: 20px;
-  margin-top: 12px;
+  margin-top: 6px;
   margin-right: 12px;
 }
 
+.address {
+  color: black;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+}
 .row2 {
   text-align: center;
   margin-bottom: 55px;
@@ -31,6 +38,7 @@
 
 .superSmall {
   font-size: 18px;
+  font-family: "Libre Baskerville", serif;
 }
 
 .titleCard2 {
@@ -48,17 +56,51 @@
 
 .eventlist {
   background-color: rgb(238, 236, 236);
-  margin-left: 70px;
-  margin-right: 70px;
+  margin-left: 3%;
+  margin-right: 3%;
   border-radius: 25px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-size: 40px;
   margin-top: 55px;
   margin-bottom: 55px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 3%;
+  border: double;
+  padding-right: 3%;
 }
 
 #root > div > div > div.eventlist.row > div:nth-child(1) > div {
   margin-bottom: 60px;
+}
+
+.form {
+  height: 40px;
+  font-size: 20px;
+  font-family: none;
+  margin-top: 20px;
+}
+.form2 {
+  cursor: pointer;
+  border: 2px solid black;
+  margin-bottom: 50px;
+
+  /* position: absolute; */
+  bottom: 0;
+  width: 100%;
+  /* padding: 10px; */
+  background-color: rgb(144, 138, 138);
+  color: white;
+  font-family: "Libre Baskerville", serif;
+}
+
+.form2:hover {
+  color: white;
+  background: rgb(109, 108, 108);
+  font-size: 25px;
+}
+
+@media (max-width: 500px) {
+}
+
+.column12 {
+  margin-bottom: 20px;
 }

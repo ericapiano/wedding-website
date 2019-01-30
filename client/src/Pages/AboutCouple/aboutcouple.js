@@ -28,7 +28,7 @@ class AboutCouple extends Component {
             <h1 className="display-4">Our Love Story</h1>
 
             {/* <p> */}
-              <img src={perfectImg} alt="heart" />
+            <img src={perfectImg} alt="heart" />
             {/* </p> */}
           </div>
 
@@ -36,33 +36,29 @@ class AboutCouple extends Component {
             <Container />
             <Row className="row2">
               <Col className="column bioPicContainer" xs="6">
-                <img
-                  className="bioPic left"
-                  src="https://image.shutterstock.com/mosaic_250/2967241/657764164/stock-photo-portrait-of-beautiful-redhead-girl-smiling-looking-at-camera-657764164.jpg"
-                  alt="Bride"
-                />
+                <img className="bioPic left" src="liv.jpg" alt="Bride" />
                 <p className="titleCard">Bride</p>
               </Col>
               <Col className="column bioPicContainer" xs="6">
                 <figure className="bioPic right">
-                  <img
-                    className="bioPic"
-                    src="https://media.istockphoto.com/photos/happy-laughing-man-picture-id544358212?k=6&m=544358212&s=612x612&w=0&h=odURMNz2hty8LIfpVahaaUKpGU4vd-UlZx4jy-OAnJA="
-                    alt="Groom"
-                  />
+                  <img className="bioPic" src="zach.jpg" alt="Groom" />
                 </figure>
 
                 <p className="titleCard">Groom</p>
               </Col>
 
               <p className="info">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Suscipit consectetur sint qui officiis velit beatae voluptatibus
-                eveniet quam totam id, eos quaerat amet veniam deleniti sequi
-                itaque. Ea, vitae ullam! Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Neque, officiis provident? Facilis, ipsam iste
-                possimus cupiditate rerum obcaecati beatae et delectus numquam
-                doloremque vitae, iure voluptate quasi impedit architecto non.
+                Jill and Jack met early in their college career when she was a
+                Freshman and he was a Sophomore. They were both taking an
+                elective science class and were assigned to be lab partners. One
+                day Jack asked Jill if she wanted to get coffee after class, and
+                the two have been hanging out ever since. After they both
+                graduated, they moved to New York City together for work. On
+                December 23, 2018 they went out for a coffee and to walk around
+                and see the city for the holidays. As they were taking their
+                picture in front of the Rockefeller Christmas tree, Jack got
+                down on one knee and asked Jill to spend the new year, and the
+                rest of their years, together.
               </p>
             </Row>
           </div>

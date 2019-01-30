@@ -19,3 +19,10 @@
 .dropdown-item {
   color: white;
 }
+
+.modal-image {
+  margin-right: auto;
+  margin-left: auto;
+  height: 25%;
+  width: 25%;
+}

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./rsvp.css";
 import API from "../../utils/API";
+import perfectImg from "../images/perfect.png";
+
 // import { timingSafeEqual } from "crypto";
 
 class Rsvp extends Component {
@@ -98,7 +100,7 @@ class Rsvp extends Component {
                   <option value="May Be">May Be</option>
                   <option selected value="Not Attending">
                     Not Attending
-                  </option>
+                    </option>
                 </select>
               </span>
               <span>
@@ -113,13 +115,14 @@ class Rsvp extends Component {
                   <option value="2">2</option>
                   <option selected value="3">
                     3
-                  </option>
+                    </option>
                 </select>
               </span>
             </div>
           );
         })}
-      </div>
+      {/* </div> */}
+      </div >
     );
   }
 }

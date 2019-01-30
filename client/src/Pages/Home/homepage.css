@@ -13,8 +13,7 @@ body:after {
   height: 100vh;
   width: 100vw;
 }
-.heart{
-  position: absolute;
+.heart {
   left: 26%;
   top: 5%;  
 }
@@ -55,4 +54,8 @@ body:after {
   font-size: 35px;
   font-family: "Libre Baskerville", serif;
   font-weight: 800;
+}
+
+.video {
+  width: 100%;
 }

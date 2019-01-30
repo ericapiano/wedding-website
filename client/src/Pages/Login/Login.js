@@ -5,28 +5,28 @@
 import React, {Component} from "react";
 import {Redirect} from "react-router-dom";
 import API from "../../utils/API";
-import "./Login.css"
+import "./Login.css";
+import bells from "../images/bells.jpg";
 
 class Login extends Component {
   state = {
     isLoggedIn: false,
     username: "",
     password: ""
-  }
+  };
 
   handleInputChange = e => {
     const { name, value } = e.target;
 
     this.setState({
       [name]: value
-    })
-  }
+    });
+  };
 
   // Method to handle user login, should redirect to main page when done
-  login = (e) => {
+  login = e => {
     e.preventDefault();
-    API
-      .login({username: this.state.username, password: this.state.password})
+    API.login({ username: this.state.username, password: this.state.password })
       .then(res => {
         // console.log(res.data);
         // console.log("logged in")
@@ -34,8 +34,8 @@ class Login extends Component {
 
       })
       .catch(err => console.log(err.response));
-  }
-  register = (e) => {
+  };
+  register = e => {
     e.preventDefault();
     
     API.register({username: this.state.username, password: this.state.password})
@@ -45,18 +45,27 @@ class Login extends Component {
 
     })
 
-  }
+    API.register({
+      username: this.state.username,
+      password: this.state.password
+    }).then(res => {
+      console.log(res.data);
+      console.log("registered successfully");
+    });
+  };
 
   render() {
     // If user is logged in, take them to main page
     if (this.state.isLoggedIn) {
-      return <Redirect to="/guestlist"/>
+      return <Redirect to="/guestlist" />;
     }
 
     return (
       <div className="container my-5">
-        <div className="row justify-content-center">
+        <div className="row justify-content-center loginBox">
           <form>
+            {/* <img className="bells" src={bells} alt="bells" /> */}
+
             <h3>Login!</h3>
             <div className="form-group">
               <label htmlFor="username">Username</label>
@@ -66,8 +75,11 @@ class Login extends Component {
                 value={this.state.username}
                 onChange={this.handleInputChange}
                 className="form-control"
-                placeholder="Username"/>
-              <small id="usernameHelp" className="form-text text-muted">Enter your username</small>
+                placeholder="Username"
+              />
+              <small id="usernameHelp" className="form-text text-muted">
+                Enter your username
+              </small>
             </div>
             <div className="form-group">
               <label htmlFor="password">Password</label>
@@ -81,13 +93,24 @@ class Login extends Component {
               />
             </div>
 
-            <button type="submit" className="btn btn-success" onClick={this.login}>Login</button>
-            <button type="submit" className="btn btn-success" onClick={this.register}>Register</button>
+            <button
+              type="submit"
+              className="btn btn-success mr-4"
+              onClick={this.login}
+            >
+              Login
+            </button>
+            <button
+              type="submit"
+              className="btn btn-success"
+              onClick={this.register}
+            >
+              Register
+            </button>
           </form>
-
         </div>
       </div>
-    )
+    );
   }
 }
 

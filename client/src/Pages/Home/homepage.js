@@ -26,13 +26,24 @@ class Homepage extends Component {
           </p>
           {/* <p className="date">June 22, 2019</p> */}
           <Countdown className="counter" date={`${year}-06-20T00:00:00`} />
+          <br />
+          <br />
 
           {/* <p>Looking to meet your next best friend?</p> */}
         </div>
         <div className="container my-5">
           <div className="row">
             <div className="col-12">
-              <iframe width="1140" height="515" src="https://www.youtube.com/embed/SGNkJdyWnqA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe
+                className="video"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/7OF4sO5chQ4"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              />
+              {/* <p>Looking to meet your next best friend?</p> */}
             </div>
           </div>
         </div>

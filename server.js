@@ -30,14 +30,7 @@ app.use(passport.session());
 app.use(routes);
 
 const User = require("./models/user");
-
-// const charge = await stripe.charges.create({
-//   amount: 2000,
-//   currency: 'usd',
-//   source: 'tok_mastercard',
-//   description: 'My first payment'
-// });
-
+console.log("hi");
 passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
