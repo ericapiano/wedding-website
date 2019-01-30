@@ -4,7 +4,12 @@ const rsvpController = require("../../controllers/rsvpController");
 // Matches with "/api/books"
 router.route("/")
 .get(rsvpController.findAll)
-.post(rsvpController.create);
+
+router.route("/:id")
+.put(rsvpController.updateStatus)
+.put(rsvpController.updateCount)
+router.route("/newGuest/")
+.post(rsvpController.createNewGuest)
   
 
 module.exports = router;

@@ -1,0 +1,28 @@
+/* dropdown is 'The Couple' and 'The Wedding Party' only, does not include 'About' ... that is on the Navbar */
+
+.btn-secondary {
+  background-color: transparent !important;
+}
+
+.dropdown-item:hover {
+  font-weight: 600;
+  background-color: rgb(172, 172, 172);
+  color: black;
+}
+
+#navbarNav > ul > li:nth-child(2) > div > div {
+  background-color: black !important;
+  color: rgb(255, 254, 254) !important;
+  border: 4px solid black;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.modal-image {
+  margin-right: auto;
+  margin-left: auto;
+  height: 25%;
+  width: 25%;
+}

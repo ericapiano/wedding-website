@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "image": "sisters.png",
+    "title": "Sisters"
+  },
+  {
+    "id": 2,
+    "image": "dance.png",
+    "title": "First dance"
+  },
+  {
+    "id": 3,
+    "image": "midnight.png",
+    "title": "New Year's kiss!"
+  },
+  {
+    "id": 4,
+    "image": "inlaws.png",
+    "title": "Family"
+  },
+  {
+    "id": 5,
+    "image": "ido.png",
+    "title": "I do"
+  },
+  {
+    "id": 6,
+    "image": "friends.png",
+    "title": "Friends"
+  },
+  {
+    "id": 7,
+    "image": "happy.png",
+    "title": "Newlyweds"
+  },
+  {
+    "id": 8,
+    "image": "invitation.png",
+    "title": "Invitation"
+  }
+]

@@ -1,0 +1,98 @@
+.jumbotron {
+  padding-top: 50px;
+}
+
+/*  */
+
+#root
+  > div
+  > div
+  > div.jumbotron.jumbotron-fluid.text-center.d-flex.align-items-center.justify-content-center:after {
+  position: absolute;
+  bottom: -50px;
+  left: 0px;
+  width: 100%;
+  content: " ";
+  background: radial-gradient(
+    circle at 50% 0%,
+    #e9ecef 25%,
+    transparent 26%,
+    transparent 40%
+  );
+  background-color: transparent;
+  background-size: 50px 100px;
+  height: 50px;
+  background-repeat: repeat-x;
+}
+.nameClick {
+  cursor: pointer;
+}
+.rsvplist {
+  width: 90%;
+  margin: 5%;
+  background-color: rgba(233, 236, 239, 0.6);
+  opacity: 0.9;
+  border-radius: 20px;
+  /* border: double; */
+}
+.rsvplist > h1 {
+  text-align: center;
+}
+.search {
+  width: 30%;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  margin: 30px;
+  font-family: "Libre Baskerville", serif;
+  padding-left: 10px;
+}
+.searchBtn {
+  margin: 10px;
+
+  cursor: pointer;
+  border: 2px solid black;
+
+  /* position: absolute; */
+  bottom: 0;
+  width: 20%;
+  padding: 10px;
+  background-color: rgb(144, 138, 138);
+  color: white;
+  font-family: "Libre Baskerville", serif;
+}
+
+.searchBtn:hover {
+  color: white;
+  background: rgb(109, 108, 108);
+  font-size: 20px;
+}
+
+.lastNameMargin {
+  margin-left: 5px;
+  font-family: "Great Vibes", cursive;
+  font-size: 36px;
+}
+.float1 {
+  float: right;
+  border: 3px solid black;
+  cursor: pointer;
+  font-family: "Libre Baskerville", serif;
+}
+
+.float2 {
+  float: right;
+  border: 3px solid black;
+  margin-right: 5px;
+  cursor: pointer;
+  font-family: "Libre Baskerville", serif;
+}
+
+.rsvp {
+  padding-bottom: 80px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.heading {
+  font-size: 36px;
+  font-family: "Great Vibes", cursive;
+}
