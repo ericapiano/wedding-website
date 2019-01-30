@@ -33,11 +33,13 @@ class Photos extends Component {
           </p>
         </div>
         <span className="photoContainer">
-          <ModalExample
-            title={this.state.modalTitle}
-            imageName={this.state.modalImage}
-            modalIsOpen={this.state.modalIsOpen}
-          />
+          {this.state.modalIsOpen ? (
+            <ModalExample
+              title={this.state.modalTitle}
+              imageName={this.state.modalImage}
+              modalIsOpen={this.state.modalIsOpen}
+            />
+          ) : null}
           {photoData.map(photo => {
             console.log(photo);
             return (

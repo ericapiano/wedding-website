@@ -73,56 +73,69 @@ class Rsvp extends Component {
 
   render() {
     return (
-      <div className="rsvplist">
-        {/* <h1>RSVP</h1> */}
-        <input
-          className="search"
-          placeholder="search for your name..."
-          onChange={e => this.handleInputChange(e)}
-        />
-        <button className="searchBtn" type="submit">
-          Search
-        </button>
+      <div>
+        <div
+          className="jumbotron jumbotron-fluid text-center d-flex align-items-center justify-content-center"
+          // style={styles.jumbotron}
+          // style={styles.cursive}
+        >
+          <h1 className="display-4">R.S.V.P.</h1>
+          <p>
+            <img src={perfectImg} alt="heart" />
+          </p>
+        </div>
 
-        {this.state.FilterGuests.map((rsvp, index) => {
-          return (
-            <div className="rsvp nameClick" key={rsvp._id}>
-              <span className="heading">{rsvp.firstName}</span>
-              <span className="lastNameMargin">{rsvp.lastName}</span>
-              <span>
-                <select
-                  className="float1"
-                  value={this.state.value}
-                  onChange={event => this.handleStatusChange(rsvp._id, event)}
-                >
-                  <option value="default">{this.state.status}</option>
-                  <option value="Attending">Attending</option>
-                  <option value="May Be">May Be</option>
-                  <option selected value="Not Attending">
-                    Not Attending
+        <div className="rsvplist">
+          {/* <h1>RSVP</h1> */}
+          <input
+            className="search"
+            placeholder="search for your name..."
+            onChange={e => this.handleInputChange(e)}
+          />
+          <button className="searchBtn" type="submit">
+            Search
+          </button>
+
+          {this.state.FilterGuests.map((rsvp, index) => {
+            return (
+              <div className="rsvp nameClick" key={rsvp._id}>
+                <span className="heading">{rsvp.firstName}</span>
+                <span className="lastNameMargin">{rsvp.lastName}</span>
+                <span>
+                  <select
+                    className="float1"
+                    value={this.state.value}
+                    onChange={event => this.handleStatusChange(rsvp._id, event)}
+                  >
+                    <option value="default">{this.state.status}</option>
+                    <option value="Attending">Attending</option>
+                    <option value="May Be">May Be</option>
+                    <option selected value="Not Attending">
+                      Not Attending
                     </option>
-                </select>
-              </span>
-              <span>
-                <select
-                  className="float2"
-                  value={this.state.value}
-                  onChange={event => this.handleCountChange(rsvp._id, event)}
-                >
-                  <option value="default">{this.state.value}</option>
-                  <option value="0">0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option selected value="3">
-                    3
+                  </select>
+                </span>
+                <span>
+                  <select
+                    className="float2"
+                    value={this.state.value}
+                    onChange={event => this.handleCountChange(rsvp._id, event)}
+                  >
+                    <option value="default">{this.state.value}</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option selected value="3">
+                      3
                     </option>
-                </select>
-              </span>
-            </div>
-          );
-        })}
-      {/* </div> */}
-      </div >
+                  </select>
+                </span>
+              </div>
+            );
+          })}
+          {/* </div> */}
+        </div>
+      </div>
     );
   }
 }

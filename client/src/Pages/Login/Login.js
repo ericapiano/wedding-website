@@ -1,9 +1,7 @@
-
-
 // ===============================
-// 
-import React, {Component} from "react";
-import {Redirect} from "react-router-dom";
+//
+import React, { Component } from "react";
+import { Redirect } from "react-router-dom";
 import API from "../../utils/API";
 import "./Login.css";
 import bells from "../images/bells.jpg";
@@ -30,20 +28,20 @@ class Login extends Component {
       .then(res => {
         // console.log(res.data);
         // console.log("logged in")
-        this.setState({isLoggedIn: res.data})
-
+        this.setState({ isLoggedIn: res.data });
       })
       .catch(err => console.log(err.response));
   };
   register = e => {
     e.preventDefault();
-    
-    API.register({username: this.state.username, password: this.state.password})
-    .then(res => {
+
+    API.register({
+      username: this.state.username,
+      password: this.state.password
+    }).then(res => {
       // console.log(res.data);
       // console.log("registered successfully")
-
-    })
+    });
 
     API.register({
       username: this.state.username,
@@ -66,43 +64,45 @@ class Login extends Component {
           <form>
             {/* <img className="bells" src={bells} alt="bells" /> */}
 
-            <h3>Login!</h3>
+            <h3 className="login">Login!</h3>
             <div className="form-group">
-              <label htmlFor="username">Username</label>
+              <label className="username" htmlFor="username">
+                Username:
+              </label>
               <input
                 type="text"
                 name="username"
                 value={this.state.username}
                 onChange={this.handleInputChange}
                 className="form-control"
-                placeholder="Username"
+                placeholder="enter username"
               />
-              <small id="usernameHelp" className="form-text text-muted">
-                Enter your username
-              </small>
+              <small id="usernameHelp" className="form-text text-muted" />
             </div>
             <div className="form-group">
-              <label htmlFor="password">Password</label>
+              <label className="password" htmlFor="password">
+                Password:
+              </label>
               <input
                 type="password"
                 name="password"
                 value={this.state.password}
                 onChange={this.handleInputChange}
                 className="form-control"
-                placeholder="Password"
+                placeholder="enter password"
               />
             </div>
 
             <button
               type="submit"
-              className="btn btn-success mr-4"
+              className="btn loginbtn btn-success mr-4"
               onClick={this.login}
             >
               Login
             </button>
             <button
               type="submit"
-              className="btn btn-success"
+              className="btn loginbtn btn-success"
               onClick={this.register}
             >
               Register

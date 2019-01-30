@@ -21,10 +21,11 @@ class Homepage extends Component {
           // style={styles.cursive}
         >
           <br />
+          <p>Jack & Jill</p>
           <p>
             <img className="heart" src={perfectImg} alt="heart" />
           </p>
-          {/* <p className="date">June 22, 2019</p> */}
+          <p className="date">June 22, 2019</p>
           <Countdown className="counter" date={`${year}-06-20T00:00:00`} />
           <br />
           <br />
