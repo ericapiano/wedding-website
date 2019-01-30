@@ -8,7 +8,8 @@ router.route("/")
 router.route("/:id")
 .put(rsvpController.updateStatus)
 .put(rsvpController.updateCount)
-
+router.route("/newGuest/")
+.post(rsvpController.createNewGuest)
   
 
 module.exports = router;

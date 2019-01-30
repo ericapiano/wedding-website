@@ -37,17 +37,7 @@ class Rsvp extends Component {
       this.setState({ FilterGuests: [] });
     }
   };
-  // let user edit their rsvp
-  // handleEdit = (guestId, status, peopleCount) => {
-  //   var details = {
-  //     status: status,
-  //     peopleCount: peopleCount
-  //   }
-  //   // console.log(guestId, status, peopleCount)
-  //   API.updateRsvp(guestId)
-  //     .then(this.state.Rsvp)
 
-  // }
   // let user change their status
   handleStatusChange = (rsvpId, event) => {
     // create copy of state
@@ -55,9 +45,9 @@ class Rsvp extends Component {
     this.setState({ status: event.target.value });
     //iterate through array to check id  ;
     for (var i = 0; i < rsvp.length; i++) {
-      console.log(rsvp[i]);
+      // console.log(rsvp[i]);
       if (rsvp[i]._id === rsvpId) {
-        console.log("matched");
+        // console.log("matched");
         rsvp[i].status = event.target.value;
         API.updateStatusRsvp(rsvpId, rsvp[i]);
       }
@@ -71,9 +61,9 @@ class Rsvp extends Component {
     this.setState({ value: event.target.value });
     //iterate through array to check id  ;
     for (var i = 0; i < rsvp.length; i++) {
-      console.log(rsvp[i]);
+      // console.log(rsvp[i]);
       if (rsvp[i]._id === rsvpId) {
-        console.log("matched");
+        // console.log("matched");
         rsvp[i].peopleCount = event.target.value;
         API.updateCountRsvp(rsvpId, rsvp[i]);
       }
@@ -83,68 +73,56 @@ class Rsvp extends Component {
 
   render() {
     return (
-      <div>
-        <div
-          className="jumbotron jumbotron-fluid text-center d-flex align-items-center justify-content-center"
-          // style={styles.jumbotron}
-          // style={styles.cursive}
-        >
-          <h1 className="display-4">Répondez S'il Vous Plaît</h1>
-          <p>
-            <img src={perfectImg} alt="heart" />
-          </p>
-        </div>
+      <div className="rsvplist">
+        {/* <h1>RSVP</h1> */}
+        <input
+          className="search"
+          placeholder="search for your name..."
+          onChange={e => this.handleInputChange(e)}
+        />
+        <button className="searchBtn" type="submit">
+          Search
+        </button>
 
-        <div className="rsvplist">
-          <h1>RSVP</h1>
-          <input
-            className="search"
-            placeholder="search for your name..."
-            onChange={e => this.handleInputChange(e)}
-          />
-          <button className="searchBtn" type="submit">
-            Search
-          </button>
-
-          {this.state.FilterGuests.map((rsvp, index) => {
-            return (
-              <div className="rsvp nameClick" key={rsvp._id}>
-                <span className="heading">{rsvp.firstName}</span>
-                <span className="lastNameMargin">{rsvp.lastName}</span>
-                <span>
-                  <select
-                    className="float1"
-                    value={this.state.value}
-                    onChange={event => this.handleStatusChange(rsvp._id, event)}
-                  >
-                    <option value="default">{this.state.status}</option>
-                    <option value="Attending">Attending</option>
-                    <option value="May Be">May Be</option>
-                    <option selected value="Not Attending">
-                      Not Attending
+        {this.state.FilterGuests.map((rsvp, index) => {
+          return (
+            <div className="rsvp nameClick" key={rsvp._id}>
+              <span className="heading">{rsvp.firstName}</span>
+              <span className="lastNameMargin">{rsvp.lastName}</span>
+              <span>
+                <select
+                  className="float1"
+                  value={this.state.value}
+                  onChange={event => this.handleStatusChange(rsvp._id, event)}
+                >
+                  <option value="default">{this.state.status}</option>
+                  <option value="Attending">Attending</option>
+                  <option value="May Be">May Be</option>
+                  <option selected value="Not Attending">
+                    Not Attending
                     </option>
-                  </select>
-                </span>
-                <span>
-                  <select
-                    className="float2"
-                    value={this.state.value}
-                    onChange={event => this.handleCountChange(rsvp._id, event)}
-                  >
-                    <option value="default">{this.state.value}</option>
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option selected value="3">
-                      3
+                </select>
+              </span>
+              <span>
+                <select
+                  className="float2"
+                  value={this.state.value}
+                  onChange={event => this.handleCountChange(rsvp._id, event)}
+                >
+                  <option value="default">{this.state.value}</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option selected value="3">
+                    3
                     </option>
-                  </select>
-                </span>
-              </div>
-            );
-          })}
-        </div>
-      </div>
+                </select>
+              </span>
+            </div>
+          );
+        })}
+      {/* </div> */}
+      </div >
     );
   }
 }

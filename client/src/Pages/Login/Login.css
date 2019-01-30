@@ -4,31 +4,33 @@
   margin: 5%;
   background-color: rgba(233, 236, 239, 0.6);
   opacity: 0.6;
-  border-radius: 5px;
 }
-.modal {
+/* .modal {
   width: 100%;
   height: 40%;
-}
+} */
 .hide {
   direction: none;
 }
-
+/* .container{
+  width: 50%;
+  
+} */
 .bells {
   height: 50px;
   width: 50px;
 }
-/* 
+
 .loginBox {
   height: 80%;
-  width: 60%;
+  width: 50%;
   padding-top: 60px;
   padding-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
   background-color: #e9ecef;
-  border-radius: 25px;
+  border-radius: 5px;
   margin-top: 150pxpx;
-  border: double;
+  /* border: double; */
   opacity: 0.9;
-} */
+} 

@@ -9,8 +9,10 @@ const passport = require("passport");
 const app = express();
 const path = require("path");
 const LocalStrategy = require("passport-local").Strategy;
+const stripe = require('stripe')('sk_test_qOY8OS6iqUFldbzIJZHy9zbN');
 const PORT = process.env.PORT || 3001; //has to be 3001 as react app uses 3000
 
+require('dotenv').config();
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -39,12 +41,12 @@ passport.deserializeUser(User.deserializeUser());
 app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
-
 // Connect to the Mongo DB
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost:27017/weeee",
   { useNewUrlParser: true }
 );
+
 
 // Start the API server
 app.listen(PORT, function() {

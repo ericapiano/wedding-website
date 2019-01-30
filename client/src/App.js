@@ -25,9 +25,9 @@ const App = () => {
         <Route exact path="/registry" component={Registry} />
         <Route exact path="/events" component={Events} />
         <Route exact path="/login" component={Login} />
+        <Route exact path="/guestlist" component={GuestList} />
         <Route exact path="/photos" component={Photos} />
 
-        {/* <Route exact path="/guestlist" component={GuestList} /> */}
       </div>
     </Router>
   );

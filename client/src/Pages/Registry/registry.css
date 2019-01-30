@@ -87,7 +87,7 @@ article {
   height: 200px;
   width: 100%;
   object-fit: cover;
-  border: double;
+  /* border: double; */
 }
 
 .article-img:hover {
@@ -111,7 +111,7 @@ article {
 .row {
   margin-top: 40px;
   background-color: rgba(255, 255, 255, 0.8);
-  border: double;
+  /* border: double; */
   padding-bottom: 20px;
 }
 

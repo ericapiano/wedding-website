@@ -11,7 +11,7 @@
 .flip-box {
   background-color: transparent;
   width: 300px;
-  height: 290px;
+  height: 280px;
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 
@@ -68,7 +68,9 @@
   height: 30px;
   width: 30px;
 }
-
+.main{
+  border-radius: 20px
+}
 #root
   > div
   > div
@@ -95,5 +97,4 @@
   border-radius: 50%;
   height: 120px;
   width: 120px;
-  border: double;
 }

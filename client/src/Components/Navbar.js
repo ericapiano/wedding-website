@@ -101,7 +101,6 @@ const Navbar = () => {
               Photos
             </Link>
           </li>
-
           <li className="nav-item">
             <Link
               to="/login"

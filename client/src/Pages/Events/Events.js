@@ -17,15 +17,15 @@ class Events extends Component {
   };
   componentDidMount() {
     this.getEvents();
-    console.log("getevents triggerred here");
+    // console.log("getevents triggerred here");
   }
 
   getEvents = () => {
     API.getAllEvents()
       .then(({ data }) => {
         this.setState({ Events: data });
-        console.log("working till here");
-        console.log(this.state);
+        // console.log("working till here");
+        // console.log(this.state);
       })
       .catch(err => console.log(err));
   };
@@ -46,6 +46,7 @@ class Events extends Component {
         <div className="eventlist row">
           {this.state.Events.map((event, index) => {
             return (
+             
               <React.Fragment>
                 <div className="eventCards col-sm-6 col-xs-12 col-lg-4">
                   <div className="row2">

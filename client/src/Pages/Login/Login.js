@@ -1,5 +1,9 @@
-import React, { Component } from "react";
-import { Redirect } from "react-router-dom";
+
+
+// ===============================
+// 
+import React, {Component} from "react";
+import {Redirect} from "react-router-dom";
 import API from "../../utils/API";
 import "./Login.css";
 import bells from "../images/bells.jpg";
@@ -24,14 +28,22 @@ class Login extends Component {
     e.preventDefault();
     API.login({ username: this.state.username, password: this.state.password })
       .then(res => {
-        console.log(res.data);
-        console.log("logged in");
-        this.setState({ isLoggedIn: res.data });
+        // console.log(res.data);
+        // console.log("logged in")
+        this.setState({isLoggedIn: res.data})
+
       })
       .catch(err => console.log(err.response));
   };
   register = e => {
     e.preventDefault();
+    
+    API.register({username: this.state.username, password: this.state.password})
+    .then(res => {
+      // console.log(res.data);
+      // console.log("registered successfully")
+
+    })
 
     API.register({
       username: this.state.username,
@@ -52,7 +64,7 @@ class Login extends Component {
       <div className="container my-5">
         <div className="row justify-content-center loginBox">
           <form>
-            <img className="bells" src={bells} alt="bells" />
+            {/* <img className="bells" src={bells} alt="bells" /> */}
 
             <h3>Login!</h3>
             <div className="form-group">
@@ -83,7 +95,7 @@ class Login extends Component {
 
             <button
               type="submit"
-              className="btn btn-success"
+              className="btn btn-success mr-4"
               onClick={this.login}
             >
               Login
