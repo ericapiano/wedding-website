@@ -10,12 +10,13 @@ class Photos extends Component {
     super(props);
     this.state = {
       modalImage: "",
-      modalIsOpen: false
+      modalIsOpen: false,
+      modalTitle: ""
     };
   }
-  changeImageName(i) {
+  changeImageName(i, title) {
     console.log(i);
-    this.setState({ modalImage: i, modalIsOpen: true });
+    this.setState({ modalImage: i, modalIsOpen: true, modalTitle: title });
     console.log(this.state);
   }
   render() {
@@ -33,6 +34,7 @@ class Photos extends Component {
         </div>
         <span className="photoContainer">
           <ModalExample
+            title={this.state.modalTitle}
             imageName={this.state.modalImage}
             modalIsOpen={this.state.modalIsOpen}
           />
@@ -42,7 +44,9 @@ class Photos extends Component {
               <div className="card">
                 <div className="img-container">
                   <img
-                    onClick={() => this.changeImageName(photo.image)}
+                    onClick={() =>
+                      this.changeImageName(photo.image, photo.title)
+                    }
                     className="img-thumbnail img-responsive"
                     src={photo.image}
                   />
