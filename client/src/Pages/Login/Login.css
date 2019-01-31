@@ -124,9 +124,23 @@
   }
 }
 
+@media (max-width: 590px) {
+  .fJsfAj {
+    width: 300px;
+  }
+  .eventList {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+}
+
 @media (max-width: 500px) {
   .fJsfAj {
     width: 300px;
+  }
+  .eventList {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
   }
 }
 

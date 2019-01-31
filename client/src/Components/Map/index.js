@@ -46,24 +46,25 @@ export default class Map extends React.Component {
 
     /* marker is the text, popup is the pinpoint on the map */
     /* convert a street address to its coordinates using https://www.gps-coordinates.net/ */
+
     /* coordinates for location 1 */
 
     L.marker([40.53473899999999, -74.5057698], { icon: markerIcon })
       .addTo(this.map)
-      .bindPopup("Bridal Shower Location.")
+      .bindPopup("Bridal Shower")
       .openPopup();
 
     /* coordinates for location 2 */
 
     L.marker([40.5409467, -74.49528750000002], { icon: markerIcon })
       .addTo(this.map)
-      .bindPopup("Ceremony Location.")
+      .bindPopup("Ceremony")
       .openPopup();
 
     /* 3rd location */
     L.marker([40.5676865, -74.5485481], { icon: markerIcon })
       .addTo(this.map)
-      .bindPopup("Reception Location.")
+      .bindPopup("Reception")
       .openPopup();
   }
 

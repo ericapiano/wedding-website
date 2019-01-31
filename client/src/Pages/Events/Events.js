@@ -46,53 +46,66 @@ class Events extends Component {
         <div className="eventlist row">
           {this.state.Events.map((event, index) => {
             return (
-              <React.Fragment>
-                <div className="eventCards col-sm-6 col-xs-12 col-lg-4">
-                  <div className="row2">
-                    <Col className="column column12 " key={event._id} xs="12">
-                      <p className="titleCard2">{event.eventName}</p>
-                      <div className="small">{event.locationName}</div>
-
-                      <img className="time" src={calendar} alt="time" />
-                      <Moment className="superSmall" format={"MM/DD/YYYY"}>
-                        {event.date}
-                      </Moment>
-
-                      <p className="address">{event.address}</p>
-
-                      <form
-                        className="form"
-                        action="http://maps.google.com/maps"
-                        method="get"
-                        target="_blank"
-                      >
-                        <input
-                          className="form"
-                          type="hidden"
-                          name="daddr"
-                          value={event.address}
-                        />
-                        <input
-                          className="form2"
-                          type="submit"
-                          value="Get directions"
-                        />
-                      </form>
-                      {/* // {event.date} */}
-                    </Col>
-                  </div>
-                </div>
-
-                {/* {index < 2 ? (
+              <div>
+                {/* <div className="event" key={event._id}>
+                  <h3 className="heading">{event.eventName}</h3>
+                  <h5>{event.date}</h5>
+                  <h5>{event.locationName}</h5>
                   <img
+                    className="middleHeart"
                     src={middleHeart}
-                    className="middleHeartevent col-1"
                     alt="heart"
-                  />
-                ) : (
-                  ""
-                )} */}
-              </React.Fragment>
+                  />{" "}
+                </div> */}
+                <Container />{" "}
+                <React.Fragment>
+                  <div className="row row2">
+                    <div className="eventCards col-sm-12 col-xs-12 col-lg-12">
+                      <Col className="column column12 " key={event._id} xs="12">
+                        <p className="titleCard2">{event.eventName}</p>
+                        <div className="small">{event.locationName}</div>
+
+                        <img className="time" src={calendar} alt="time" />
+                        <Moment className="superSmall" format={"MM/DD/YYYY"}>
+                          {event.date}
+                        </Moment>
+
+                        <p className="address">{event.address}</p>
+
+                        <form
+                          className="form"
+                          action="http://maps.google.com/maps"
+                          method="get"
+                          target="_blank"
+                        >
+                          <input
+                            className="form"
+                            type="hidden"
+                            name="daddr"
+                            value={event.address}
+                          />
+                          <input
+                            className="form2"
+                            type="submit"
+                            value="Get directions"
+                          />
+                        </form>
+                        {/* // {event.date} */}
+                      </Col>
+                    </div>
+                  </div>
+
+                  {/* {index < 2 ? (
+                    <img
+                      src={middleHeart}
+                      className="middleHeartevent col-1"
+                      alt="heart"
+                    />
+                  ) : (
+                    ""
+                  )} */}
+                </React.Fragment>
+              </div>
             );
           })}
         </div>
