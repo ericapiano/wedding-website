@@ -63,7 +63,8 @@
   font-size: 40px;
   margin-top: 55px;
   margin-bottom: 55px;
-  padding-left: 3%;
+  align-items: center;
+  padding-left: 5%;
   /* border: double; */
   padding-right: 3%;
 }

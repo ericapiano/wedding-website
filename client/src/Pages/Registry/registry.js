@@ -54,6 +54,7 @@ class Registry extends Component {
                   <div id="browse_app">
                     <a
                       className="btn btn-large btn-info shopbtn"
+                      target="_blank"
                       href="https://www.crateandbarrel.com/gift-registry/registrant-list/5946439?GrId=5946439"
                     >
                       SHOP
@@ -70,6 +71,7 @@ class Registry extends Component {
                   <div id="browse_app">
                     <a
                       className="btn btn-large btn-info shopbtn"
+                      target="_blank"
                       href="https://www.bedbathandbeyond.com/store/giftregistry/viewregistryguest/547133835"
                       alt="Bed Bath Beyond"
                     >
@@ -86,6 +88,7 @@ class Registry extends Component {
                   <div id="browse_app">
                     <a
                       className="btn btn-large btn-info shopbtn"
+                      target="_blank"
                       href="https://www.amazon.com/wedding/organize-registry?ref_=wedding_subnav"
                       alt="amazon"
                     >
