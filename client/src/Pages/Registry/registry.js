@@ -48,14 +48,14 @@ class Registry extends Component {
                 <article>
                   <img
                     className="article-img"
-                    src="https://www.logolynx.com/images/logolynx/eb/eb69ec763edf8991d8c87d9742aaf57f.jpeg"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRijbIiwvJZP0LGPh8HTfxielaJBilo10DhFMlZ20UUYpDWJ0V4"
                     alt="crate and barrel"
                   />
                   <div id="browse_app">
                     <a
                       className="btn btn-large btn-info shopbtn"
                       target="_blank"
-                      href="https://www.crateandbarrel.com/gift-registry/registrant-list/5946439?GrId=5946439"
+                      href="https://www.macys.com/wgl/registry/guest/7039599"
                     >
                       SHOP
                     </a>
