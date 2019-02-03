@@ -60,10 +60,10 @@ class Login extends Component {
 
     return (
       <div className="container my-5">
+        <br />
+
         <div className="row justify-content-center loginBox">
           <form>
-            {/* <img className="bells" src={bells} alt="bells" /> */}
-
             <h3 className="login">Login</h3>
             <div className="form-group">
               <label className="username" htmlFor="username">

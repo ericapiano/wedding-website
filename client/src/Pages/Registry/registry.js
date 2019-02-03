@@ -4,28 +4,9 @@ import perfectImg from "../images/perfect.png";
 import "./registry.css";
 // import dogpic from "./images/pups.jpg";
 
-// const styles = {
-//   cursive: {
-//     // backgroundImage: `url(${dogpic})`,
-//     // backgroundSize: "cover",
-//     // backgroundPosition: "center",
-//     // backgroundBlendMode: "multiply",
-//     // // backgroundColor: "red",
-//     // color: "white",
-//     // textShadow: "0 0 10px black",
-//     // minHeight: "45vh"
-//   }
-// };
-
 class Registry extends Component {
   state = {};
-  // shoppingSites = [
-  //   {
-  //     name:"potteryBarn",
-  //     linkURL:"",
-  //     imageURL""
-  //   }
-  // ]
+
   render() {
     return (
       <div>
@@ -67,7 +48,6 @@ class Registry extends Component {
                     src="https://g.foolcdn.com/art/companylogos/square/BBBY.png"
                     alt=" "
                   />
-                  {/* <h1 className="article-title">Title of article</h1> */}
                   <div id="browse_app">
                     <a
                       className="btn btn-large btn-info shopbtn"
@@ -96,30 +76,6 @@ class Registry extends Component {
                     </a>
                   </div>
                 </article>
-                {/* <article>
-                  <img
-                    className="article-img"
-                    src="http://placekitten.com/280/250"
-                    alt=" "
-                  />
-                  <h1 className="article-title">Title of article</h1>
-                </article> */}
-                {/* <article>
-                  <img
-                    className="article-img"
-                    src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTc9BbC0ceryp4nX9q3ATk_EMbnQmCQw-QxsV_oEfKRcZHWi0UWBy7CdXxvyAok1nqr_XvgtjbRixq2CbNr5wA7oZwXWwKhOfjkkgz6mzESF4JiakhKa_eC&usqp=CAE"
-                    alt=" "
-                  />
-                  <h1 className="article-title">Plates</h1>
-                </article> */}
-                {/* <article>
-                  <img
-                    className="article-img"
-                    src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRgXOQQqjs0oHUvg6iBANtd23knfGGCS72H82wiqhQAOUehlJJNvuAjqdpvr8-v_q0YO90iibOWZTE3gX-TVnJUUxXztcr3fHVp5004YTzjuNFlh12uHglsXw&usqp=CAE"
-                    alt=" "
-                  />
-                  <h1 className="article-title">Bedding</h1>
-                </article> */}
               </section>
             </div>
           </div>

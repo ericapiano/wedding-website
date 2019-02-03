@@ -68,8 +68,8 @@
   height: 30px;
   width: 30px;
 }
-.main{
-  border-radius: 20px
+.main {
+  border-radius: 20px;
 }
 #root
   > div
@@ -93,7 +93,7 @@
 }
 
 .weddingParty {
-  background-color: white;
+  background-color: lightgrey;
   border-radius: 50%;
   height: 120px;
   width: 120px;

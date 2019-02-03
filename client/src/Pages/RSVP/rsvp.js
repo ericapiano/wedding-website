@@ -79,7 +79,7 @@ class Rsvp extends Component {
           // style={styles.jumbotron}
           // style={styles.cursive}
         >
-          <h1 className="display-4">R.S.V.P.</h1>
+          <h1 className="display-4">Répondez s'il vous plaît</h1>
           <p>
             <img id="img" src={perfectImg} alt="heart" />
           </p>
@@ -109,7 +109,6 @@ class Rsvp extends Component {
                   >
                     <option value="default">{this.state.status}</option>
                     <option value="Attending">Attending</option>
-                    <option value="May Be">May Be</option>
                     <option selected value="Not Attending">
                       Not Attending
                     </option>
