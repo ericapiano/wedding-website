@@ -135,7 +135,7 @@
     "mpath": "^0.5.1",
     "mongoose-legacy-pluralize": "^1.0.2",
     "mongodb-core": "^3.1.9",
-    "mongoose": "^5.4.6",
+    "mongoose": "^5.2.8",
     "morgan": "^1.9.1",
     "ms": "^2.0.0",
     "nice-try": "^1.0.5",
@@ -270,5 +270,6 @@
   "bugs": {
     "url": "https://github.com/ericapiano/wedding-website/issues"
   },
-  "homepage": "https://github.com/ericapiano/wedding-website#readme"
+  "homepage": "https://github.com/ericapiano/wedding-website#readme",
+  "heroku-run-build-script": true
 }
