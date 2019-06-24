@@ -1,29 +1,30 @@
 // Our newest addition to the dependency family
-var mongoose = require("mongoose");
+
+// var mongoose = require("mongoose");
+const mongoose = require("mongoose");
+mongoose.set("useCreateIndex", true);
+
 // Get a reference to the mongoose Schema constructor
 var Schema = mongoose.Schema;
 
 var eventSchema = new Schema({
-  
   eventName: {
-    type:String,
+    type: String,
     required: true
   },
   date: {
-  type: Date,
-  required: true
-  },
-  locationName: {
-    type:String,
+    type: Date,
     required: true
   },
-  address:{
-    type:String,
+  locationName: {
+    type: String,
+    required: true
+  },
+  address: {
+    type: String
     // required: true
   }
-})
+});
 
 var EVENT = mongoose.model("EVENT", eventSchema);
 module.exports = EVENT;
-  
-  

@@ -1,5 +1,7 @@
 // Our newest addition to the dependency family
-var mongoose = require("mongoose");
+// var mongoose = require("mongoose");
+const mongoose = require("mongoose");
+mongoose.set("useCreateIndex", true);
 
 // Get a reference to the mongoose Schema constructor
 const Schema = mongoose.Schema;
@@ -20,11 +22,11 @@ var rsvpSchema = new Schema({
   },
   status: {
     type: String,
-    required: true,
+    required: true
   },
   peopleCount: {
     type: Number,
-    required: true,
+    required: true
     // default: 0
   }
 });

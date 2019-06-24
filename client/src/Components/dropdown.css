@@ -5,6 +5,7 @@
 }
 
 .dropdown-item:hover {
+  font-size: 20px;
   font-weight: 600;
   background-color: rgb(172, 172, 172);
   color: black;
